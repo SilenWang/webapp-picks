@@ -1,21 +1,37 @@
 import { WebApp, Locale, Category } from './types';
-import { apps } from '@/data/apps';
+import YAML from 'yaml';
+import fs from 'fs';
+import path from 'path';
+
+let cachedApps: WebApp[] | null = null;
+
+function loadApps(): WebApp[] {
+  if (cachedApps) {
+    return cachedApps;
+  }
+  
+  const filePath = path.join(process.cwd(), 'src', 'data', 'apps.yaml');
+  const fileContents = fs.readFileSync(filePath, 'utf8');
+  const data = YAML.parse(fileContents);
+  cachedApps = data.apps as WebApp[];
+  return cachedApps;
+}
 
 export function getAllApps(): WebApp[] {
-  return apps;
+  return loadApps();
 }
 
 export function getAppById(id: string): WebApp | undefined {
-  return apps.find(app => app.id === id);
+  return loadApps().find(app => app.id === id);
 }
 
 export function getAppsByCategory(category: Category): WebApp[] {
-  return apps.filter(app => app.category === category);
+  return loadApps().filter(app => app.category === category);
 }
 
 export function searchApps(query: string, locale: Locale): WebApp[] {
   const lowerQuery = query.toLowerCase();
-  return apps.filter(app => 
+  return loadApps().filter(app => 
     app.name[locale].toLowerCase().includes(lowerQuery) ||
     app.description[locale].toLowerCase().includes(lowerQuery) ||
     app.tags.some(tag => tag.toLowerCase().includes(lowerQuery))
@@ -31,7 +47,7 @@ export function filterApps(
     search?: string;
   }
 ): WebApp[] {
-  let result = apps;
+  let result = loadApps();
   
   if (options.category) {
     result = result.filter(app => app.category === options.category);
