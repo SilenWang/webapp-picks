@@ -46,7 +46,7 @@ export default async function HomePage({ params, searchParams }: PageProps) {
   const categories = getCategories();
   
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-b from-background to-muted/30">
+    <div className="min-h-screen">
       <Suspense fallback={<div className="h-16 border-b bg-background" />}>
         <Header 
           locale={lang}
@@ -54,37 +54,67 @@ export default async function HomePage({ params, searchParams }: PageProps) {
         />
       </Suspense>
       
-      <main className="flex-1 container px-4 py-8">
-        <div className="mb-8">
-          <h1 className="text-3xl font-bold mb-2">{dict.header.title}</h1>
-          <p className="text-muted-foreground">{dict.footer.description}</p>
-        </div>
-        
-        <div className="mb-8">
-          <FilterBarClient 
-            locale={lang}
-            dict={dict}
-            categories={categories}
-            initialCategory={selectedCategory}
-            initialPwa={selectedPwa}
-            initialSelfhosted={selectedSelfhosted}
-          />
-        </div>
-        
-        {filteredApps.length > 0 ? (
-          <AppGrid apps={filteredApps} locale={lang} dict={dict} />
-        ) : (
-          <div className="text-center py-16">
-            <p className="text-muted-foreground text-lg">{dict.noResults}</p>
-          </div>
-        )}
-      </main>
+      <FilterBarClient 
+        locale={lang}
+        dict={dict}
+        categories={categories}
+        initialCategory={selectedCategory}
+        initialPwa={selectedPwa}
+        initialSelfhosted={selectedSelfhosted}
+      />
       
-      <footer className="border-t py-6">
-        <div className="container px-4 text-center text-sm text-muted-foreground">
-          {dict.footer.description}
-        </div>
-      </footer>
+      <div className="main-wrapper">
+        <main className="main-content">
+          {filteredApps.length > 0 ? (
+            <div className="grid-container" style={{ 
+              display: 'flex', 
+              flexWrap: 'wrap', 
+              marginLeft: '8px', 
+              marginRight: '8px',
+              marginBottom: '16px',
+              justifyContent: 'space-around',
+              backgroundColor: 'var(--background)'
+            }}>
+              {filteredApps.map((app) => (
+                <a
+                  key={app.id}
+                  href={`/${lang}/app/${app.id}`}
+                  className="app-card"
+                  style={{ 
+                    width: '100%', 
+                    maxWidth: '345px',
+                    margin: '4px'
+                  }}
+                >
+                  <div className="app-icon">
+                    <img src={app.icon} alt={app.name[lang]} />
+                  </div>
+                  <div className="app-info">
+                    <div className="app-name">{app.name[lang]}</div>
+                    <div className="app-desc">{app.description[lang]}</div>
+                  </div>
+                  <div className="app-tags">
+                    {app.pwaSupported && (
+                      <span className="tag">PWA</span>
+                    )}
+                    {app.selfhosted && (
+                      <span className="tag">Self</span>
+                    )}
+                  </div>
+                </a>
+              ))}
+            </div>
+          ) : (
+            <div style={{ 
+              textAlign: 'center', 
+              padding: '64px 16px',
+              color: 'var(--muted-foreground)'
+            }}>
+              <p style={{ fontSize: '18px' }}>{dict.noResults}</p>
+            </div>
+          )}
+        </main>
+      </div>
     </div>
   );
 }

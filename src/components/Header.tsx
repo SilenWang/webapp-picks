@@ -21,7 +21,7 @@ export function Header({ locale, dict }: HeaderProps) {
   const [searchQuery, setSearchQuery] = useState(searchParams.get('search') || '');
   
   const otherLocale = locale === 'en' ? 'zh' : 'en';
-  
+
   const handleSearchChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
     const query = e.target.value;
     setSearchQuery(query);
@@ -33,44 +33,41 @@ export function Header({ locale, dict }: HeaderProps) {
     }
     router.push(`/${locale}?${params.toString()}`);
   }, [locale, router, searchParams]);
-  
+
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center justify-between px-4">
-        <div className="flex items-center gap-6">
-          <Link href={`/${locale}`} className="flex items-center gap-2">
-            <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
-              <svg className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-              </svg>
-            </div>
-            <span className="text-lg font-semibold">{dict.header.title}</span>
-          </Link>
+    <header className="top-header">
+      <div className="top-header-content">
+        <Link href={`/${locale}`} style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', color: 'inherit' }}>
+          <svg className="header-logo" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="32" height="32" rx="8" fill="url(#gradient)"/>
+            <path d="M16 8C11.5817 8 8 11.5817 8 16C8 20.4183 11.5817 24 16 24C20.4183 24 24 20.4183 24 16C24 11.5817 20.4183 8 16 8Z" fill="white" fillOpacity="0.3"/>
+            <path d="M16 12C13.7909 12 12 13.7909 12 16C12 18.2091 13.7909 20 16 20C18.2091 20 20 18.2091 20 16C20 13.7909 18.2091 12 16 12Z" fill="white"/>
+            <defs>
+              <linearGradient id="gradient" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                <stop stopColor="#0b9cda"/>
+                <stop offset="1" stopColor="#7b68ee"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <span className="header-title">{dict.header.title}</span>
+        </Link>
+        
+        <div className="header-search-container">
+          <svg className="header-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+          </svg>
+          <input
+            type="text"
+            value={searchQuery}
+            onChange={handleSearchChange}
+            placeholder={dict.header.search}
+            className="header-search-input"
+          />
         </div>
         
-        <div className="flex flex-1 items-center justify-center max-w-md mx-4">
-          <div className="relative w-full">
-            <svg className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-            </svg>
-            <input
-              type="text"
-              value={searchQuery}
-              onChange={handleSearchChange}
-              placeholder={dict.header.search}
-              className="w-full h-10 pl-10 pr-4 rounded-lg border bg-background text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
-            />
-          </div>
-        </div>
-        
-        <div className="flex items-center gap-4">
-          <Link 
-            href={`/${otherLocale}`}
-            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-          >
-            {otherLocale === 'en' ? 'English' : '中文'}
-          </Link>
-        </div>
+        <Link href={`/${otherLocale}`} className="header-lang">
+          {otherLocale === 'en' ? 'English' : '中文'}
+        </Link>
       </div>
     </header>
   );
