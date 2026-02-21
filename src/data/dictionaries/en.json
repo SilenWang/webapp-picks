@@ -1,0 +1,48 @@
+{
+  "header": {
+    "title": "Web App Store",
+    "search": "Search apps..."
+  },
+  "filters": {
+    "all": "All",
+    "category": "Category",
+    "pwaSupported": "PWA Support",
+    "selfhosted": "Self-hosted",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "appCard": {
+    "openApp": "Open",
+    "pwa": "PWA",
+    "selfhost": "Self-hosted"
+  },
+  "detail": {
+    "overview": "Overview",
+    "details": "Details",
+    "version": "Version",
+    "lastUpdated": "Last Updated",
+    "developer": "Developer",
+    "category": "Category",
+    "tags": "Tags",
+    "license": "License",
+    "pwaSupport": "PWA Support",
+    "selfhosted": "Self-hosted",
+    "selfhostUrl": "Self-hosted URL",
+    "dockerImage": "Docker Image",
+    "openApp": "Open App"
+  },
+  "categories": {
+    "productivity": "Productivity",
+    "developer": "Developer Tools",
+    "media": "Media",
+    "social": "Social",
+    "tools": "Tools",
+    "education": "Education",
+    "entertainment": "Entertainment",
+    "shopping": "Shopping"
+  },
+  "noResults": "No apps found",
+  "footer": {
+    "description": "A curated collection of web applications"
+  }
+}
