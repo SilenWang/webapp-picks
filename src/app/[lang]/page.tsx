@@ -4,7 +4,6 @@ import { Locale, Category } from '@/lib/types';
 import { filterApps, getCategories } from '@/lib/apps';
 import { getDictionary } from '@/lib/i18n';
 import { Header } from '@/components/Header';
-import { AppGrid } from '@/components/AppGrid';
 import { FilterBarClient } from '@/components/FilterBarClient';
 
 interface PageProps {
@@ -54,63 +53,57 @@ export default async function HomePage({ params, searchParams }: PageProps) {
         />
       </Suspense>
       
-      <FilterBarClient 
-        locale={lang}
-        dict={dict}
-        categories={categories}
-        initialCategory={selectedCategory}
-        initialPwa={selectedPwa}
-        initialSelfhosted={selectedSelfhosted}
-      />
-      
       <div className="main-wrapper">
+        <FilterBarClient 
+          locale={lang}
+          dict={dict}
+          categories={categories}
+          initialCategory={selectedCategory}
+          initialPwa={selectedPwa}
+          initialSelfhosted={selectedSelfhosted}
+        />
+        
         <main className="main-content">
+          <h1 className="page-title">{dict.header.title}</h1>
+          <p className="page-subtitle">{dict.footer.description}</p>
+          
           {filteredApps.length > 0 ? (
-            <div className="grid-container" style={{ 
-              display: 'flex', 
-              flexWrap: 'wrap', 
-              marginLeft: '8px', 
-              marginRight: '8px',
-              marginBottom: '16px',
-              justifyContent: 'space-around',
-              backgroundColor: 'var(--background)'
-            }}>
+            <div className="app-grid">
               {filteredApps.map((app) => (
                 <a
                   key={app.id}
                   href={`/${lang}/app/${app.id}`}
                   className="app-card"
-                  style={{ 
-                    width: '100%', 
-                    maxWidth: '345px',
-                    margin: '4px'
-                  }}
                 >
-                  <div className="app-icon">
-                    <img src={app.icon} alt={app.name[lang]} />
+                  <div className="app-card-header">
+                    <div className="app-icon">
+                      <img src={app.icon} alt={app.name[lang]} />
+                    </div>
+                    <div className="app-info">
+                      <div className="app-name">{app.name[lang]}</div>
+                      <div className="app-desc">{app.description[lang]}</div>
+                    </div>
                   </div>
-                  <div className="app-info">
-                    <div className="app-name">{app.name[lang]}</div>
-                    <div className="app-desc">{app.description[lang]}</div>
-                  </div>
-                  <div className="app-tags">
-                    {app.pwaSupported && (
-                      <span className="tag">PWA</span>
-                    )}
-                    {app.selfhosted && (
-                      <span className="tag">Self</span>
-                    )}
+                  <div className="app-card-footer">
+                    <div className="app-tags">
+                      {app.pwaSupported && (
+                        <span className="tag tag-pwa">PWA</span>
+                      )}
+                      {app.selfhosted && (
+                        <span className="tag tag-self">Self</span>
+                      )}
+                    </div>
+                    <span className="app-category">{app.category}</span>
                   </div>
                 </a>
               ))}
             </div>
           ) : (
-            <div style={{ 
-              textAlign: 'center', 
-              padding: '64px 16px',
-              color: 'var(--muted-foreground)'
-            }}>
-              <p style={{ fontSize: '18px' }}>{dict.noResults}</p>
+            <div className="empty-state">
+              <svg className="empty-state-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                <path d="M9.172 14.828L12 12m0 0l2.828-2.828M12 12l2.828 2.828M12 12L9.172 9.172M21 12a9 9 0 11-18 0 9 9 0 0118 0z" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+              <p className="empty-state-text">{dict.noResults}</p>
             </div>
           )}
         </main>
