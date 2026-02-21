@@ -1,0 +1,15 @@
+[workspace]
+authors = ["Sylens Wong <qiumin14@163.com>"]
+channels = ["conda-forge", "bioconda", "https://prefix.dev/sylens"]
+name = "webapp-collection"
+platforms = ["linux-aarch64", "linux-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+python = '3.12.*'
+nodejs = '*'
+
+[pypi-dependencies]
+browser-use = '*'
