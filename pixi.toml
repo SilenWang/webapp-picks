@@ -1,9 +1,9 @@
 [workspace]
 authors = ["Sylens Wong <qiumin14@163.com>"]
 channels = ["conda-forge", "bioconda", "https://prefix.dev/sylens"]
-name = "webapp-collection"
+name = "webapp-picks"
 platforms = ["linux-aarch64", "linux-64"]
-version = "0.1.0"
+version = "0.1.1"
 
 [tasks]
 
