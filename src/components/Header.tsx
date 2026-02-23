@@ -42,32 +42,36 @@ export function Header({ locale, dict }: HeaderProps) {
   const themeTriggerRef = useRef<HTMLButtonElement>(null);
   const langTriggerRef = useRef<HTMLButtonElement>(null);
 
-  useEffect(() => {
-    const savedTheme = localStorage.getItem('theme') as Theme;
-    if (savedTheme) {
-      setTheme(savedTheme);
-    }
-    setMounted(true);
-  }, []);
-
-  useEffect(() => {
-    if (!mounted) return;
-    
-    const applyTheme = (isDark: boolean) => {
+  const applyTheme = useCallback((themeValue: Theme) => {
+    const apply = (isDark: boolean) => {
       document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
     };
 
-    if (theme === 'auto') {
+    if (themeValue === 'auto') {
       const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-      applyTheme(mediaQuery.matches);
+      apply(mediaQuery.matches);
       
-      const handler = (e: MediaQueryListEvent) => applyTheme(e.matches);
+      const handler = (e: MediaQueryListEvent) => apply(e.matches);
       mediaQuery.addEventListener('change', handler);
       return () => mediaQuery.removeEventListener('change', handler);
     } else {
-      applyTheme(theme === 'dark');
+      apply(themeValue === 'dark');
     }
-  }, [theme, mounted]);
+  }, []);
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('theme') as Theme | null;
+    const initialTheme = savedTheme || 'auto';
+    setTheme(initialTheme);
+    applyTheme(initialTheme);
+    setMounted(true);
+  }, [applyTheme]);
+
+  useEffect(() => {
+    if (!mounted) return;
+    const cleanup = applyTheme(theme);
+    return cleanup;
+  }, [theme, mounted, applyTheme]);
 
   const handleThemeChange = useCallback((newTheme: Theme) => {
     setTheme(newTheme);
@@ -200,22 +204,28 @@ export function Header({ locale, dict }: HeaderProps) {
                 className="dropdown-menu"
                 style={{ top: langDropdownPos.top, left: langDropdownPos.left }}
               >
-                <Link 
-                  href="/en" 
+                <button 
                   className="dropdown-item"
-                  onClick={() => setLangDropdownOpen(false)}
+                  onMouseDown={(e) => {
+                    e.preventDefault();
+                    setLangDropdownOpen(false);
+                    router.push('/en');
+                  }}
                 >
                   English
                   {locale === 'en' && <Check size={14} className="dropdown-check" />}
-                </Link>
-                <Link 
-                  href="/zh" 
+                </button>
+                <button 
                   className="dropdown-item"
-                  onClick={() => setLangDropdownOpen(false)}
+                  onMouseDown={(e) => {
+                    e.preventDefault();
+                    setLangDropdownOpen(false);
+                    router.push('/zh');
+                  }}
                 >
                   中文
                   {locale === 'zh' && <Check size={14} className="dropdown-check" />}
-                </Link>
+                </button>
               </div>
             )}
           </div>
@@ -237,7 +247,10 @@ export function Header({ locale, dict }: HeaderProps) {
               >
                 <button 
                   className="dropdown-item"
-                  onClick={() => handleThemeChange('light')}
+                  onMouseDown={(e) => {
+                    e.preventDefault();
+                    handleThemeChange('light');
+                  }}
                 >
                   <Sun size={16} />
                   {dict.header.themeLight}
@@ -245,7 +258,10 @@ export function Header({ locale, dict }: HeaderProps) {
                 </button>
                 <button 
                   className="dropdown-item"
-                  onClick={() => handleThemeChange('dark')}
+                  onMouseDown={(e) => {
+                    e.preventDefault();
+                    handleThemeChange('dark');
+                  }}
                 >
                   <Moon size={16} />
                   {dict.header.themeDark}
@@ -253,7 +269,10 @@ export function Header({ locale, dict }: HeaderProps) {
                 </button>
                 <button 
                   className="dropdown-item"
-                  onClick={() => handleThemeChange('auto')}
+                  onMouseDown={(e) => {
+                    e.preventDefault();
+                    handleThemeChange('auto');
+                  }}
                 >
                   <Monitor size={16} />
                   {dict.header.themeAuto}
