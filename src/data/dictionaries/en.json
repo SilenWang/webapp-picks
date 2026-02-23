@@ -1,7 +1,12 @@
 {
   "header": {
     "title": "Webapp Picks",
-    "search": "Search apps..."
+    "search": "Search apps...",
+    "language": "Language",
+    "theme": "Theme",
+    "themeLight": "Light",
+    "themeDark": "Dark",
+    "themeAuto": "Auto"
   },
   "filters": {
     "all": "All",

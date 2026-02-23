@@ -14,7 +14,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --background: #202124;
     --foreground: #e8eae9;
     --muted: #37383a;
@@ -23,6 +23,16 @@
     --card: #2d2e30;
     --card-foreground: #e8eae9;
   }
+}
+
+:root[data-theme="dark"] {
+  --background: #202124;
+  --foreground: #e8eae9;
+  --muted: #37383a;
+  --muted-foreground: #8c8c8c;
+  --border: #3c4043;
+  --card: #2d2e30;
+  --card-foreground: #e8eae9;
 }
 
 @theme inline {
@@ -105,6 +115,104 @@ body {
 
 .header-lang:hover {
   opacity: 0.7;
+}
+
+/* Dropdown Styles */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dropdown-container {
+  position: relative;
+  overflow: visible;
+}
+
+.dropdown-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-trigger {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 10px;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--foreground);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dropdown-trigger:hover {
+  background: var(--muted);
+  border-color: var(--primary);
+}
+
+.dropdown-chevron {
+  transition: transform 0.2s ease;
+}
+
+.dropdown-chevron.open {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  margin-top: 4px;
+  min-width: 140px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  z-index: 1102;
+  overflow: visible;
+  animation: dropdownFadeIn 0.15s ease;
+}
+
+@keyframes dropdownFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 14px;
+  background: transparent;
+  border: none;
+  color: var(--foreground);
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+  text-decoration: none;
+}
+
+.dropdown-item:hover {
+  background: var(--muted);
+}
+
+.dropdown-item svg:first-child {
+  flex-shrink: 0;
+  color: var(--muted-foreground);
+}
+
+.dropdown-check {
+  margin-left: auto;
+  color: var(--primary);
 }
 
 .header-search-container {

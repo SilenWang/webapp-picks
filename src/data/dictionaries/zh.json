@@ -1,7 +1,12 @@
 {
   "header": {
     "title": "Webapp Picks",
-    "search": "搜索应用..."
+    "search": "搜索应用...",
+    "language": "语言",
+    "theme": "主题",
+    "themeLight": "明",
+    "themeDark": "暗",
+    "themeAuto": "自动"
   },
   "filters": {
     "all": "全部",
