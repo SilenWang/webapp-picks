@@ -35,6 +35,20 @@
   --card-foreground: #e8eae9;
 }
 
+:root[data-theme="dark"] .header-search-input {
+  background: rgba(55, 56, 58, 1);
+  color: #e8eae9;
+}
+
+:root[data-theme="dark"] .header-search-input:focus {
+  background: white;
+  color: #212121;
+}
+
+:root[data-theme="dark"] .header-search-icon {
+  color: #9aa0a6;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -210,9 +224,9 @@ body {
   color: var(--muted-foreground);
 }
 
-.dropdown-check {
+.dropdown-item .dropdown-check {
   margin-left: auto;
-  color: var(--primary);
+  color: var(--primary) !important;
 }
 
 .header-search-container {
@@ -254,22 +268,6 @@ body {
   height: 18px;
   color: #9aa0a6;
   pointer-events: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  .header-search-input {
-    background: rgba(55, 56, 58, 1);
-    color: #e8eae9;
-  }
-  
-  .header-search-input:focus {
-    background: white;
-    color: #212121;
-  }
-  
-  .header-search-icon {
-    color: #9aa0a6;
-  }
 }
 
 /* Main Layout */
