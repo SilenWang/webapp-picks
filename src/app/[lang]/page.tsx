@@ -93,7 +93,9 @@ export default async function HomePage({ params, searchParams }: PageProps) {
                         <span className="tag tag-self">Self</span>
                       )}
                     </div>
-                    <span className="app-category">{app.category}</span>
+                    <span className="app-category">
+                      {categories.find(c => c.value === app.category)?.label[lang] || app.category}
+                    </span>
                   </div>
                 </a>
               ))}
