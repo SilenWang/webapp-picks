@@ -64,9 +64,6 @@ export default async function HomePage({ params, searchParams }: PageProps) {
         />
         
         <main className="main-content">
-          <h1 className="page-title">{dict.header.title}</h1>
-          <p className="page-subtitle">{dict.footer.description}</p>
-          
           {filteredApps.length > 0 ? (
             <div className="app-grid">
               {filteredApps.map((app) => (
