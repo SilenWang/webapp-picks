@@ -29,7 +29,7 @@ apps:
     icon: https://www-img.fydeos.com/uploads/548bc4b7eb97cd00654d12a8bda01a62f1444a53a10b51802d5b2cadb61c33513e482.png
     pwaSupported: true
     selfhosted: false
-    category: productivity
+    category: office
     tags:
       - notes
       - docs
@@ -51,7 +51,7 @@ apps:
     selfhosted: true
     selfhostUrl: https://github.com/coder/code-server
     dockerImage: codercom/code-server
-    category: developer
+    category: dev
     tags:
       - code
       - editor
@@ -70,33 +70,13 @@ apps:
     icon: https://www-img.fydeos.com/uploads/6a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1.png
     pwaSupported: true
     selfhosted: false
-    category: developer
+    category: dev
     tags:
       - design
       - ui
       - prototyping
     developer: Figma
     lastUpdated: "2024-08-18"
-
-  - id: slack
-    name:
-      en: Slack
-      zh: Slack
-    description:
-      en: "Business communication platform."
-      zh: "企业沟通平台。"
-    url: https://slack.com/
-    icon: https://www-img.fydeos.com/uploads/7a6b5c4d3e2f1a0b9c8d7e6f5a4b3c2.png
-    pwaSupported: true
-    selfhosted: false
-    category: social
-    tags:
-      - chat
-      - messaging
-      - collaboration
-    developer: Salesforce
-    lastUpdated: "2024-08-10"
-
   - id: yuque
     name:
       en: Yuque
@@ -108,7 +88,7 @@ apps:
     icon: https://www-img.fydeos.com/uploads/4a3b2c1d0e9f8a7b6c5d4e3f2a1b0c9.png
     pwaSupported: true
     selfhosted: false
-    category: productivity
+    category: office
     tags:
       - docs
       - wiki
@@ -127,7 +107,7 @@ apps:
     icon: https://www-img.fydeos.com/uploads/3a2b1c0d9e8f7a6b5c4d3e2f1a0b9c8.png
     pwaSupported: true
     selfhosted: false
-    category: productivity
+    category: office
     tags:
       - docs
       - collaboration
@@ -146,7 +126,7 @@ apps:
     icon: https://www-img.fydeos.com/uploads/2a1b0c9d8e7f6a5b4c3d2e1f0a9b8c7.png
     pwaSupported: true
     selfhosted: false
-    category: productivity
+    category: office
     tags:
       - collaboration
       - chat
@@ -165,7 +145,7 @@ apps:
     icon: https://www-img.fydeos.com/uploads/1a0b9c8d7e6f5a4b3c2d1e0f9a8b7c6.png
     pwaSupported: true
     selfhosted: false
-    category: productivity
+    category: office
     tags:
       - docs
       - collaboration
@@ -184,51 +164,13 @@ apps:
     icon: https://www-img.fydeos.com/uploads/5a4b3c2d1e0f9a8b7c6d5e4f3a2b1c0.png
     pwaSupported: true
     selfhosted: false
-    category: productivity
+    category: office
     tags:
       - notes
       - journaling
       - thinking
     developer: Flomo
     lastUpdated: "2024-08-12"
-
-  - id: pinterest
-    name:
-      en: Pinterest
-      zh: Pinterest
-    description:
-      en: "Visual discovery engine for ideas and inspiration."
-      zh: "用于创意和灵感的视觉发现引擎。"
-    url: https://www.pinterest.com/
-    icon: https://www-img.fydeos.com/uploads/2c1b0a9f8e7d6c5b4a3f2e1d0c9b8a7.png
-    pwaSupported: true
-    selfhosted: false
-    category: social
-    tags:
-      - pinboard
-      - images
-      - inspiration
-    developer: Pinterest
-    lastUpdated: "2024-08-01"
-
-  - id: airbnb
-    name:
-      en: Airbnb
-      zh: Airbnb 爱彼迎
-    description:
-      en: "Vacation rentals and experiences."
-      zh: "度假租赁和体验平台。"
-    url: https://www.airbnb.com/
-    icon: https://www-img.fydeos.com/uploads/1a0b9c8d7e6f5a4b3c2d1e0f9a8b7c6.png
-    pwaSupported: true
-    selfhosted: false
-    category: shopping
-    tags:
-      - travel
-      - accommodation
-      - booking
-    developer: Airbnb
-    lastUpdated: "2024-08-05"
 
   - id: squoosh
     name:
@@ -242,7 +184,7 @@ apps:
     pwaSupported: true
     selfhosted: true
     selfhostUrl: https://github.com/GoogleChromeLabs/squoosh
-    category: tools
+    category: image
     tags:
       - image
       - compression
@@ -262,7 +204,7 @@ apps:
     pwaSupported: true
     selfhosted: true
     selfhostUrl: https://github.com/regex101
-    category: developer
+    category: dev
     tags:
       - regex
       - testing
@@ -319,7 +261,7 @@ apps:
     icon: https://www-img.fydeos.com/uploads/8b7a6c5d4e3f2a1b0c9d8e7f6a5b4c3.png
     pwaSupported: true
     selfhosted: false
-    category: productivity
+    category: office
     tags:
       - data-visualization
       - charts
@@ -376,7 +318,7 @@ apps:
     icon: https://www-img.fydeos.com/uploads/7a6b5c4d3e2f1a0b9c8d7e6f5a4b3c2.png
     pwaSupported: true
     selfhosted: false
-    category: productivity
+    category: office
     tags:
       - mind-map
       - brainstorming
@@ -395,7 +337,7 @@ apps:
     icon: https://www-img.fydeos.com/uploads/6a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1.png
     pwaSupported: true
     selfhosted: false
-    category: productivity
+    category: office
     tags:
       - notes
       - mood-board
@@ -414,7 +356,7 @@ apps:
     icon: https://www-img.fydeos.com/uploads/8a7b6c5d4e3f2a1b0c9d8e7f6a5b4c3.png
     pwaSupported: true
     selfhosted: false
-    category: productivity
+    category: office
     tags:
       - notes
       - outline
@@ -433,7 +375,7 @@ apps:
     icon: https://www-img.fydeos.com/uploads/5a4b3c2d1e0f9a8b7c6d5e4f3a2b1c0.png
     pwaSupported: true
     selfhosted: false
-    category: productivity
+    category: office
     tags:
       - office
       - docs

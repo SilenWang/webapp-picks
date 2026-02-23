@@ -1,0 +1,63 @@
+categories:
+  - id: news
+    name:
+      en: News
+      zh: 新闻咨询
+    icon: Newspaper
+    description:
+      en: News and information platforms
+      zh: 新闻资讯平台
+
+  - id: image
+    name:
+      en: Image Processing
+      zh: 图像处理
+    icon: Image
+    description:
+      en: Image editing and processing tools
+      zh: 图像编辑和处理工具
+
+  - id: dev
+    name:
+      en: Programming
+      zh: 编程开发
+    icon: Code2
+    description:
+      en: Development tools and IDEs
+      zh: 开发工具和IDE
+
+  - id: media
+    name:
+      en: Media
+      zh: 影音媒体
+    icon: MonitorPlay
+    description:
+      en: Audio and video streaming platforms
+      zh: 音视频流媒体平台
+
+  - id: ai
+    name:
+      en: AI
+      zh: 人工智能
+    icon: Sparkles
+    description:
+      en: Artificial intelligence tools
+      zh: 人工智能工具
+
+  - id: office
+    name:
+      en: Office
+      zh: 文档办公
+    icon: FileText
+    description:
+      en: Document editing and office tools
+      zh: 文档编辑和办公工具
+
+  - id: tools
+    name:
+      en: Tools
+      zh: 实用工具
+    icon: Wrench
+    description:
+      en: Useful utility tools
+      zh: 实用工具

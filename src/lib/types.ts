@@ -5,15 +5,18 @@ export interface LocalizedString {
   zh: string;
 }
 
-export type Category = 
-  | 'productivity'
-  | 'developer'
-  | 'media'
-  | 'social'
-  | 'tools'
-  | 'education'
-  | 'entertainment'
-  | 'shopping';
+export type Category = string;
+
+export interface CategoryConfig {
+  id: string;
+  name: LocalizedString;
+  icon: string;
+  description: LocalizedString;
+}
+
+export interface CategoriesData {
+  categories: CategoryConfig[];
+}
 
 export interface WebApp {
   id: string;

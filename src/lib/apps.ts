@@ -1,9 +1,10 @@
-import { WebApp, Locale, Category } from './types';
+import { WebApp, Locale, Category, CategoryConfig, CategoriesData } from './types';
 import YAML from 'yaml';
 import fs from 'fs';
 import path from 'path';
 
 let cachedApps: WebApp[] | null = null;
+let cachedCategories: CategoryConfig[] | null = null;
 
 function loadApps(): WebApp[] {
   if (cachedApps) {
@@ -15,6 +16,18 @@ function loadApps(): WebApp[] {
   const data = YAML.parse(fileContents);
   cachedApps = data.apps as WebApp[];
   return cachedApps;
+}
+
+function loadCategories(): CategoryConfig[] {
+  if (cachedCategories) {
+    return cachedCategories;
+  }
+  
+  const filePath = path.join(process.cwd(), 'src', 'data', 'categories.yaml');
+  const fileContents = fs.readFileSync(filePath, 'utf8');
+  const data = YAML.parse(fileContents) as CategoriesData;
+  cachedCategories = data.categories;
+  return cachedCategories;
 }
 
 export function getAllApps(): WebApp[] {
@@ -73,15 +86,11 @@ export function filterApps(
   return result;
 }
 
-export function getCategories(): { value: Category; label: { en: string; zh: string } }[] {
-  return [
-    { value: 'productivity', label: { en: 'Productivity', zh: '效率办公' } },
-    { value: 'developer', label: { en: 'Developer Tools', zh: '开发工具' } },
-    { value: 'media', label: { en: 'Media', zh: '多媒体' } },
-    { value: 'social', label: { en: 'Social', zh: '社交' } },
-    { value: 'tools', label: { en: 'Tools', zh: '工具' } },
-    { value: 'education', label: { en: 'Education', zh: '教育' } },
-    { value: 'entertainment', label: { en: 'Entertainment', zh: '娱乐' } },
-    { value: 'shopping', label: { en: 'Shopping', zh: '购物' } },
-  ];
+export function getCategories(): { value: string; label: { en: string; zh: string }; icon: string }[] {
+  const categories = loadCategories();
+  return categories.map(cat => ({
+    value: cat.id,
+    label: cat.name,
+    icon: cat.icon,
+  }));
 }
