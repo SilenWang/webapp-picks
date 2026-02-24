@@ -206,7 +206,6 @@ export function Header({ locale, dict }: HeaderProps) {
               aria-label={dict.header.language}
             >
               <Globe size={18} />
-              <ChevronDown size={14} className={`dropdown-chevron ${langDropdownOpen ? 'open' : ''}`} />
             </button>
             {langDropdownOpen && (
               <div 
@@ -247,7 +246,6 @@ export function Header({ locale, dict }: HeaderProps) {
               aria-label={dict.header.theme}
             >
               {getThemeIcon()}
-              <ChevronDown size={14} className={`dropdown-chevron ${themeDropdownOpen ? 'open' : ''}`} />
             </button>
             {themeDropdownOpen && (
               <div 
