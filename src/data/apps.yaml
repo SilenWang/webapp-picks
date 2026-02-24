@@ -1,4 +1,235 @@
 apps:
+  - id: newsnow
+    name:
+      en: NewsNow
+      zh: NewsNow
+    description:
+      en: "Elegant reading of real-time and hottest news."
+      zh: "优雅地阅读实时热门新闻。"
+    url: https://newsnow.busiyi.world/
+    icon: https://raw.githubusercontent.com/ourongxing/newsnow/main/public/pwa-512x512.png
+    pwaSupported: true
+    selfhosted: true
+    category: news
+    tags:
+      - news
+      - aggregator
+      - rss
+    developer: NewsNow
+    lastUpdated: "2026-02-24"
+
+  - id: goofish
+    name:
+      en: Goofish
+      zh: 闲鱼
+    description:
+      en: "Second-hand marketplace platform for buying and selling used items."
+      zh: "二手闲置物品买卖平台。"
+    url: https://www.goofish.com/
+    icon: https://www.google.com/s2/favicons?domain=goofish.com&sz=128
+    pwaSupported: false
+    selfhosted: false
+    category: tools
+    tags:
+      - marketplace
+      - second-hand
+      - shopping
+    developer: Goofish
+    lastUpdated: "2026-02-24"
+
+  - id: fluorite
+    name:
+      en: Fluorite
+      zh: Fluorite
+    description:
+      en: "An elegant, offline‑first PWA video player for your local media."
+      zh: "一个优雅的、以离线优先为理念的 PWA 视频播放器，用于播放你的本地媒体。"
+    url: https://fluorite.afcms.dev/
+    icon: https://raw.githubusercontent.com/AFCMS/fluorite/master/public/fluorite.svg
+    pwaSupported: true
+    selfhosted: true
+    selfhostUrl:  
+    category: media
+    tags:
+      - tools
+      - media
+      - player
+    developer: AFCMS
+    lastUpdated: "2026-02-24"
+
+  - id: fydeos-notes
+    name:
+      en: FydeOS Notes
+      zh: FydeOS 笔记
+    description:
+      en: "Note-taking application by FydeOS."
+      zh: "FydeOS 出品的笔记应用。"
+    url: https://notes.fydeos.io/
+    icon: https://www.google.com/s2/favicons?domain=fydeos.io&sz=128
+    pwaSupported: true
+    selfhosted: false
+    category: office
+    tags:
+      - notes
+      - productivity
+      - markdown
+    developer: FydeOS
+    lastUpdated: "2026-02-24"
+
+  - id: paperpile
+    name:
+      en: Paperpile
+      zh: Paperpile
+    description:
+      en: "Reference management software for researchers."
+      zh: "面向研究人员的文献管理软件。"
+    url: https://app.paperpile.com/
+    icon: https://www.google.com/s2/favicons?domain=paperpile.com&sz=128
+    pwaSupported: false
+    selfhosted: false
+    category: office
+    tags:
+      - reference
+      - research
+      - bibliography
+    developer: Paperpile
+    lastUpdated: "2026-02-24"
+
+  - id: photopea
+    name:
+      en: Photopea
+      zh: Photopea
+    description:
+      en: "Free online image editor supporting PSD, XCF, Sketch."
+      zh: "免费在线图像编辑器，支持 PSD、XCF、Sketch 等格式。"
+    url: https://www.photopea.com/
+    icon: https://www.google.com/s2/favicons?domain=photopea.com&sz=128
+    pwaSupported: true
+    selfhosted: false
+    category: image
+    tags:
+      - image
+      - editor
+      - design
+    developer: Photopea
+    lastUpdated: "2026-02-24"
+
+  - id: drawio
+    name:
+      en: Draw.io
+      zh: Draw.io
+    description:
+      en: "Online flowchart and diagram drawing tool."
+      zh: "在线流程图和图表绘制工具。"
+    url: https://app.diagrams.net/
+    icon: https://www.google.com/s2/favicons?domain=diagrams.net&sz=128
+    pwaSupported: true
+    selfhosted: true
+    selfhostUrl: https://github.com/jgraph/drawio
+    category: image
+    tags:
+      - diagram
+      - flowchart
+      - mind-map
+    developer: JGraph
+    lastUpdated: "2026-02-24"
+
+  - id: excalidraw
+    name:
+      en: Excalidraw
+      zh: Excalidraw
+    description:
+      en: "Virtual whiteboard for hand-drawn style diagrams."
+      zh: "手绘风格的白板绘图工具。"
+    url: https://excalidraw.com/
+    icon: https://www.google.com/s2/favicons?domain=excalidraw.com&sz=128
+    pwaSupported: true
+    selfhosted: true
+    selfhostUrl: https://github.com/excalidraw/excalidraw
+    category: image
+    tags:
+      - whiteboard
+      - sketch
+      - diagram
+    developer: Excalidraw
+    lastUpdated: "2026-02-24"
+
+  - id: goodnotes
+    name:
+      en: GoodNotes
+      zh: GoodNotes
+    description:
+      en: "Digital note-taking app"
+      zh: "数字笔记应用。"
+    url: https://web.goodnotes.com/
+    icon: https://www.google.com/s2/favicons?domain=goodnotes.com&sz=128
+    pwaSupported: false
+    selfhosted: false
+    category: office
+    tags:
+      - notes
+      - handwriting
+      - productivity
+    developer: GoodNotes
+    lastUpdated: "2026-02-24"
+
+  - id: napkin-ai
+    name:
+      en: Napkin AI
+      zh: Napkin AI
+    description:
+      en: "AI-powered visual thinking and content creation tool."
+      zh: "AI 驱动的视觉思维和内容创作工具。"
+    url: https://app.napkin.ai
+    icon: https://www.google.com/s2/favicons?domain=napkin.ai&sz=128
+    pwaSupported: false
+    selfhosted: false
+    category: ai
+    tags:
+      - ai
+      - visualization
+      - design
+    developer: Napkin AI
+    lastUpdated: "2026-02-24"
+
+  - id: figdraw
+    name:
+      en: Figdraw
+      zh: Figdraw
+    description:
+      en: "Online scientific illustration and drawing platform."
+      zh: "在线科研绘图平台。"
+    url: https://www.figdraw.com/
+    icon: https://static.home-for-researchers.com/home/paint_front/pro/img/hr_family/figdrawlogo.svg
+    pwaSupported: false
+    selfhosted: false
+    category: tools
+    tags:
+      - science
+      - illustration
+      - drawing
+    developer: Figdraw
+    lastUpdated: "2026-02-24"
+
+  - id: baidu-coordinate-picker
+    name:
+      en: Baidu Coordinate Picker
+      zh: 百度坐标拾取
+    description:
+      en: "Tool for picking and converting map coordinates."
+      zh: "地图坐标拾取和转换工具。"
+    url: https://lbs.baidu.com/maptool/getpoint
+    icon: https://www.google.com/s2/favicons?domain=baidu.com&sz=128
+    pwaSupported: false
+    selfhosted: false
+    category: tools
+    tags:
+      - map
+      - coordinates
+      - utility
+    developer: Baidu
+    lastUpdated: "2026-02-24"
+
   - id: spotify
     name:
       en: Spotify
@@ -70,7 +301,7 @@ apps:
     icon: https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/500px-Figma-logo.svg.png
     pwaSupported: false
     selfhosted: false
-    category: dev
+    category: image
     tags:
       - design
       - ui
@@ -142,7 +373,7 @@ apps:
       en: "Smart document collaboration platform."
       zh: "智能文档协作平台。"
     url: https://docs.qq.com/
-    icon: https://isux.tencent.com/static/upload/pics/brands/tencent-docs.png
+    icon: https://raw.githubusercontent.com/lobehub/lobe-icons/refs/heads/master/packages/static-png/light/tencent-color.png
     pwaSupported: false
     selfhosted: false
     category: office
@@ -180,7 +411,7 @@ apps:
       en: "Compress images in your browser."
       zh: "在浏览器中压缩图片。"
     url: https://squoosh.app/
-    icon: https://squoosh.app/c/favicon-c9cf50ef.ico
+    icon: https://squoosh.app/c/icon-demo-logo-326ed9b6.png
     pwaSupported: false
     selfhosted: true
     selfhostUrl: https://github.com/GoogleChromeLabs/squoosh
@@ -367,12 +598,12 @@ apps:
   - id: office
     name:
       en: Microsoft 365
-      zh: Office
+      zh: 微软 365
     description:
       en: "Online Office suite."
       zh: "在线办公套件。"
     url: https://office.com/
-    icon: https://res.cdn.office.net/officehub/images/content/images/favicon_copilot-4370172aa6.ico
+    icon: https://www.google.com/s2/favicons?domain=microsoft.com&sz=128
     pwaSupported: false
     selfhosted: false
     category: office
