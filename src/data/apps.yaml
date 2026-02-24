@@ -8,7 +8,7 @@ apps:
       zh: "Spotify，你所需的音乐。"
     url: https://open.spotify.com/
     icon: https://www-img.fydeos.com/uploads/95ac73eca26fc383b57663a9b0a31b810e4827adf4278bed076341167c8d028889f3.png
-    pwaSupported: true
+    pwaSupported: false
     selfhosted: false
     category: media
     tags:
@@ -26,8 +26,8 @@ apps:
       en: "All-in-one workspace for notes, docs, and project management."
       zh: "集笔记、文档和项目管理于一体的多功能工作空间。"
     url: https://www.notion.so/
-    icon: https://www-img.fydeos.com/uploads/548bc4b7eb97cd00654d12a8bda01a62f1444a53a10b51802d5b2cadb61c33513e482.png
-    pwaSupported: true
+    icon: https://www.notion.com/front-static/favicon.ico
+    pwaSupported: false
     selfhosted: false
     category: office
     tags:
@@ -46,8 +46,8 @@ apps:
       en: "Code anywhere, anytime, in your browser."
       zh: "随时随地在浏览器中编写代码。"
     url: https://vscode.dev/
-    icon: https://www-img.fydeos.com/uploads/c060edb3b0829d2595f4446d937e7f86835d6e2028f7b99a099853ee7430e7d01fe01.png
-    pwaSupported: true
+    icon: https://vscode.dev/static/stable/favicon.ico
+    pwaSupported: false
     selfhosted: true
     selfhostUrl: https://github.com/coder/code-server
     dockerImage: codercom/code-server
@@ -67,8 +67,8 @@ apps:
       en: "Collaborative interface design tool."
       zh: "协作界面设计工具。"
     url: https://www.figma.com/
-    icon: https://www-img.fydeos.com/uploads/6a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1.png
-    pwaSupported: true
+    icon: https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/500px-Figma-logo.svg.png
+    pwaSupported: false
     selfhosted: false
     category: dev
     tags:
@@ -85,8 +85,8 @@ apps:
       en: "Knowledge management and collaboration platform."
       zh: "知识管理和协作平台。"
     url: https://www.yuque.com/
-    icon: https://www-img.fydeos.com/uploads/4a3b2c1d0e9f8a7b6c5d4e3f2a1b0c9.png
-    pwaSupported: true
+    icon: https://mdn.alipayobjects.com/huamei_0prmtq/afts/img/A*sRUdR543RjcAAAAAAAAAAAAADvuFAQ/original
+    pwaSupported: false
     selfhosted: false
     category: office
     tags:
@@ -103,9 +103,9 @@ apps:
     description:
       en: "Online document collaboration."
       zh: "在线文档协作。"
-    url: https://shimo.cn/
-    icon: https://www-img.fydeos.com/uploads/3a2b1c0d9e8f7a6b5c4d3e2f1a0b9c8.png
-    pwaSupported: true
+    url: https://shimo.im/
+    icon: https://as.smgv.cn/static/lizard-service-homepage/assets/logo_icon.78308823.png
+    pwaSupported: false
     selfhosted: false
     category: office
     tags:
@@ -123,8 +123,8 @@ apps:
       en: "Enterprise collaboration platform."
       zh: "企业协作平台。"
     url: https://www.feishu.cn/
-    icon: https://www-img.fydeos.com/uploads/2a1b0c9d8e7f6a5b4c3d2e1f0a9b8c7.png
-    pwaSupported: true
+    icon: https://p1-hera.feishucdn.com/tos-cn-i-jbbdkfciu3/1ec7129d900e442d8501d810efdaa369~tplv-jbbdkfciu3-image:0:0.image
+    pwaSupported: false
     selfhosted: false
     category: office
     tags:
@@ -142,8 +142,8 @@ apps:
       en: "Smart document collaboration platform."
       zh: "智能文档协作平台。"
     url: https://docs.qq.com/
-    icon: https://www-img.fydeos.com/uploads/1a0b9c8d7e6f5a4b3c2d1e0f9a8b7c6.png
-    pwaSupported: true
+    icon: https://isux.tencent.com/static/upload/pics/brands/tencent-docs.png
+    pwaSupported: false
     selfhosted: false
     category: office
     tags:
@@ -161,8 +161,8 @@ apps:
       en: "Quick notes and thinking tools."
       zh: "快速笔记和思考工具。"
     url: https://flomoapp.com/
-    icon: https://www-img.fydeos.com/uploads/5a4b3c2d1e0f9a8b7c6d5e4f3a2b1c0.png
-    pwaSupported: true
+    icon: https://flomoapp.com/images/logo.png
+    pwaSupported: false
     selfhosted: false
     category: office
     tags:
@@ -180,8 +180,8 @@ apps:
       en: "Compress images in your browser."
       zh: "在浏览器中压缩图片。"
     url: https://squoosh.app/
-    icon: https://www-img.fydeos.com/uploads/3a2b1c0d9e8f7a6b5c4d3e2f1a0b9c8.png
-    pwaSupported: true
+    icon: https://squoosh.app/c/favicon-c9cf50ef.ico
+    pwaSupported: false
     selfhosted: true
     selfhostUrl: https://github.com/GoogleChromeLabs/squoosh
     category: image
@@ -200,8 +200,8 @@ apps:
       en: "Online regex debugger and tester."
       zh: "在线正则表达式调试和测试工具。"
     url: https://regex101.com/
-    icon: https://www-img.fydeos.com/uploads/9a8b7c6d5e4f3a2b1c0d9e8f7a6b5c4.png
-    pwaSupported: true
+    icon: https://regex101.com/static/assets/icon-57.png
+    pwaSupported: false
     selfhosted: true
     selfhostUrl: https://github.com/regex101
     category: dev
@@ -220,8 +220,8 @@ apps:
       en: "Video creation platform powered by AI."
       zh: "AI驱动的视频创作平台。"
     url: https://lumen5.com/
-    icon: https://www-img.fydeos.com/uploads/9d8c1e8b6d7c2a4f5e6d8c0b1a3f2e4d5c6b7a8.png
-    pwaSupported: true
+    icon: https://cdn.lumen5.com/lumen5-site-images/favicon/2025/favicon.ico
+    pwaSupported: false
     selfhosted: false
     category: media
     tags:
@@ -239,8 +239,8 @@ apps:
       en: "Stream over 100 million songs."
       zh: "流媒体播放超过1亿首歌曲。"
     url: https://music.apple.com/
-    icon: https://www-img.fydeos.com/uploads/9a8b7c6d5e4f3a2b1c0d9e8f7a6b5c4.png
-    pwaSupported: true
+    icon: https://music.apple.com/assets/favicon/favicon-180.png
+    pwaSupported: false
     selfhosted: false
     category: media
     tags:
@@ -258,8 +258,8 @@ apps:
       en: "Data visualization and storytelling platform."
       zh: "数据可视化和故事讲述平台。"
     url: https://flourish.studio/
-    icon: https://www-img.fydeos.com/uploads/8b7a6c5d4e3f2a1b0c9d8e7f6a5b4c3.png
-    pwaSupported: true
+    icon: https://flourish.studio/favicon.ico
+    pwaSupported: false
     selfhosted: false
     category: office
     tags:
@@ -277,8 +277,8 @@ apps:
       en: "Simple, free, responsive one-page sites."
       zh: "简单、免费、响应式单页网站。"
     url: https://carrd.co/
-    icon: https://www-img.fydeos.com/uploads/5a4b3c2d1e0f9a8b7c6d5e4f3a2b1c0.png
-    pwaSupported: true
+    icon: https://carrd.co/assets/docs/images/brand/png/icon-color.png
+    pwaSupported: false
     selfhosted: false
     category: tools
     tags:
@@ -296,8 +296,8 @@ apps:
       en: "Music and audio distribution platform."
       zh: "音乐和音频发行平台。"
     url: https://soundcloud.com/
-    icon: https://www-img.fydeos.com/uploads/4a3b2c1d0e9f8a7b6c5d4e3f2a1b0c9.png
-    pwaSupported: true
+    icon: https://images.seeklogo.com/logo-png/15/1/soundcloud-logo-png_seeklogo-157945.png
+    pwaSupported: false
     selfhosted: false
     category: media
     tags:
@@ -315,8 +315,8 @@ apps:
       en: "Free online mind mapping and brainstorming."
       zh: "免费在线思维导图和头脑风暴工具。"
     url: https://gitmind.com/
-    icon: https://www-img.fydeos.com/uploads/7a6b5c4d3e2f1a0b9c8d7e6f5a4b3c2.png
-    pwaSupported: true
+    icon: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0q5dOj6U4S9ln8gF51CCjCHVNFrou0rGBQw&s
+    pwaSupported: false
     selfhosted: false
     category: office
     tags:
@@ -334,8 +334,8 @@ apps:
       en: "Visual tool for creative projects."
       zh: "创意项目的视觉工具。"
     url: https://milanote.com/
-    icon: https://www-img.fydeos.com/uploads/6a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1.png
-    pwaSupported: true
+    icon: https://milanote.com/favicon.ico
+    pwaSupported: false
     selfhosted: false
     category: office
     tags:
@@ -353,8 +353,8 @@ apps:
       en: "Outline-based note-taking and brainstorming."
       zh: "基于大纲的笔记和头脑风暴工具。"
     url: https://mubu.com/
-    icon: https://www-img.fydeos.com/uploads/8a7b6c5d4e3f2a1b0c9d8e7f6a5b4c3.png
-    pwaSupported: true
+    icon: https://img.wervps.gedoucheng.com/wervps/mac-20220509/03104257_65bd4b0c1c35161.png
+    pwaSupported: false
     selfhosted: false
     category: office
     tags:
@@ -372,8 +372,8 @@ apps:
       en: "Online Office suite."
       zh: "在线办公套件。"
     url: https://office.com/
-    icon: https://www-img.fydeos.com/uploads/5a4b3c2d1e0f9a8b7c6d5e4f3a2b1c0.png
-    pwaSupported: true
+    icon: https://res.cdn.office.net/officehub/images/content/images/favicon_copilot-4370172aa6.ico
+    pwaSupported: false
     selfhosted: false
     category: office
     tags:
