@@ -3,9 +3,12 @@ authors = ["Sylens Wong <qiumin14@163.com>"]
 channels = ["conda-forge", "bioconda", "https://prefix.dev/sylens"]
 name = "webapp-picks"
 platforms = ["linux-aarch64", "linux-64"]
-version = "0.1.1"
+version = "0.1.2"
 
 [tasks]
+init = { cmd = 'pixi run "npm install"'}
+start = { cmd = 'git worktree add ../proj-{{issue}} -b {{issue}} && cd ./proj-{{issue}} && pixi run init', args = ["issue"]}
+end = { cmd = 'git merge {{issue}} && git worktree remove ../proj-{{issue}} && git branch -d {{issue}}', args = ["issue"]}
 
 [dependencies]
 python = '3.12.*'
