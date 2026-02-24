@@ -6,6 +6,7 @@ import { getDictionary } from '@/lib/i18n';
 import { Header } from '@/components/Header';
 import { FilterBarClient } from '@/components/FilterBarClient';
 import { AppList } from '@/components/AppList';
+import { BottomBar } from '@/components/BottomBar';
 
 interface PageProps {
   params: Promise<{ lang: Locale }>;
@@ -72,6 +73,8 @@ export default async function HomePage({ params, searchParams }: PageProps) {
             categories={categories}
           />
         </main>
+        
+        <BottomBar />
       </div>
     </div>
   );
