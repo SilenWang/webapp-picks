@@ -666,3 +666,41 @@ body {
 .app-card:nth-child(6) { animation-delay: 0.12s; }
 .app-card:nth-child(7) { animation-delay: 0.14s; }
 .app-card:nth-child(8) { animation-delay: 0.16s; }
+
+/* About Page */
+.about-page {
+  display: flex;
+  justify-content: center;
+}
+
+.about-container {
+  max-width: 720px;
+  width: 100%;
+}
+
+.about-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--foreground);
+  margin-bottom: 32px;
+}
+
+.about-section {
+  margin-bottom: 32px;
+}
+
+.about-section-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--foreground);
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--primary);
+  display: inline-block;
+}
+
+.about-section-content {
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--muted-foreground);
+}

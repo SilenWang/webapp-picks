@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useCallback, useState, useEffect, useRef } from 'react';
 import { Locale } from '@/lib/types';
-import { Globe, Sun, Moon, Monitor, ChevronDown, Check } from 'lucide-react';
+import { Globe, Sun, Moon, Monitor, ChevronDown, Check, BookOpen } from 'lucide-react';
 
 type Theme = 'light' | 'dark' | 'auto';
 
@@ -24,6 +24,7 @@ interface HeaderProps {
       themeLight: string;
       themeDark: string;
       themeAuto: string;
+      about: string;
     };
   };
 }
@@ -189,6 +190,14 @@ export function Header({ locale, dict }: HeaderProps) {
         </div>
         
         <div className="header-right">
+          <Link
+            href={`/${locale}/about`}
+            className="dropdown-trigger"
+            aria-label={dict.header.about}
+          >
+            <BookOpen size={18} />
+          </Link>
+
           <div className="dropdown-wrapper">
             <button 
               ref={langTriggerRef}
@@ -197,7 +206,6 @@ export function Header({ locale, dict }: HeaderProps) {
               aria-label={dict.header.language}
             >
               <Globe size={18} />
-              <ChevronDown size={14} className={`dropdown-chevron ${langDropdownOpen ? 'open' : ''}`} />
             </button>
             {langDropdownOpen && (
               <div 
@@ -238,7 +246,6 @@ export function Header({ locale, dict }: HeaderProps) {
               aria-label={dict.header.theme}
             >
               {getThemeIcon()}
-              <ChevronDown size={14} className={`dropdown-chevron ${themeDropdownOpen ? 'open' : ''}`} />
             </button>
             {themeDropdownOpen && (
               <div 
