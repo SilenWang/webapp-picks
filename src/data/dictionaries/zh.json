@@ -6,7 +6,16 @@
     "theme": "主题",
     "themeLight": "明",
     "themeDark": "暗",
-    "themeAuto": "自动"
+    "themeAuto": "自动",
+    "about": "关于"
+  },
+  "about": {
+    "title": "关于 Webapp Picks",
+    "origin": "网站的由来",
+    "originContent": "我目前主要使用安装 FydeOS 的设备作为个人电脑。使用这些设备时，我更倾向于符合 FydeOS 上游 Chromium OS 的最初理念，即基于网站和 Web 应用来完成一切工作。然而，这样的设备在中国大陆极其少见，因此我很难知道专门为这种设备设立的网络应用商店，所以我决定根据自己的使用情况，建立一个属于自己的 Web 应用商店。",
+    "criteria": "收录标准",
+    "criteriaContent": "在收录理念方面，由于现代网站和应用之间的界限已经越来越模糊，因此我也并不限制一定是遵守 PWA 要求的应用才进入这个商店。只要是在我学习和工作中，能够满足一定需求的 Web 应用，我都会收录。",
+    "back": "返回"
   },
   "filters": {
     "all": "全部",

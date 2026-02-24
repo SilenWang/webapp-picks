@@ -6,7 +6,16 @@
     "theme": "Theme",
     "themeLight": "Light",
     "themeDark": "Dark",
-    "themeAuto": "Auto"
+    "themeAuto": "Auto",
+    "about": "About"
+  },
+  "about": {
+    "title": "About Webapp Picks",
+    "origin": "Origin",
+    "originContent": "I currently use devices running FydeOS as my personal computers. When using these devices, I tend to follow the original philosophy of FydeOS's upstream Chromium OS - that is, to accomplish everything through websites and web applications. However, such devices are extremely rare in Mainland China, so it is difficult for me to know about web app stores specifically designed for these devices. Therefore, I decided to build my own web app store based on my own usage experience.",
+    "criteria": "Collection Criteria",
+    "criteriaContent": "Regarding our collection philosophy, since the boundary between modern websites and applications has become increasingly blurred, we do not restrict the store to only PWA-compliant applications. Any web application that meets my learning and work needs will be included in this store.",
+    "back": "Back"
   },
   "filters": {
     "all": "All",
