@@ -7,7 +7,7 @@ version = "0.1.2"
 
 [tasks]
 init = { cmd = 'pixi run "npm install"'}
-start = { cmd = 'git worktree add ../proj-{{issue}} -b {{issue}} && cd ./proj-{{issue}} && pixi run init', args = ["issue"]}
+start = { cmd = 'git worktree add ../proj-{{issue}} -b {{issue}} && cd ../proj-{{issue}} && pixi run init', args = ["issue"]}
 end = { cmd = 'git merge {{issue}} && git worktree remove ../proj-{{issue}} && git branch -d {{issue}}', args = ["issue"]}
 
 [dependencies]
