@@ -363,7 +363,46 @@ body {
   margin-left: var(--sidebar-width);
   padding: 24px;
   background-color: var(--background);
-  min-height: calc(100vh - 64px);
+  min-height: calc(100vh - 64px - 48px);
+  padding-bottom: calc(24px + 48px);
+}
+
+/* Bottom Bar Styles */
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 36px;
+  background-color: var(--background);
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.bottom-bar-content {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.bottom-bar-text {
+  font-size: 13px;
+  color: var(--muted-foreground);
+}
+
+.bottom-bar-link {
+  font-size: 13px;
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.bottom-bar-link:hover {
+  opacity: 0.7;
 }
 
 /* App Grid */
@@ -553,7 +592,8 @@ body {
     position: fixed;
     width: 100%;
     max-width: 300px;
-    height: calc(100vh - 64px);
+    height: calc(100vh - 64px - 48px);
+    top: 64px;
     transform: translateX(-100%);
     box-shadow: 4px 0 24px rgba(0, 0, 0, 0.1);
   }
@@ -568,7 +608,7 @@ body {
     top: 64px;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 48px;
     background: rgba(0, 0, 0, 0.5);
     z-index: 99;
   }
@@ -584,6 +624,8 @@ body {
   .main-content {
     margin-left: 0;
     padding: 16px;
+    padding-bottom: calc(16px + 48px);
+    min-height: calc(100vh - 64px - 48px);
   }
   
   .app-grid {
