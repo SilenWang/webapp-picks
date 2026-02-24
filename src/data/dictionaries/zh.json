@@ -34,7 +34,7 @@
     "overview": "概述",
     "details": "详情",
     "version": "版本",
-    "lastUpdated": "上次更新",
+    "lastUpdated": "信息更新",
     "developer": "开发者",
     "category": "分类",
     "tags": "标签",
@@ -44,16 +44,6 @@
     "selfhostUrl": "自托管地址",
     "dockerImage": "Docker 镜像",
     "openApp": "打开应用"
-  },
-  "categories": {
-    "productivity": "效率办公",
-    "developer": "开发工具",
-    "media": "多媒体",
-    "social": "社交",
-    "tools": "工具",
-    "education": "教育",
-    "entertainment": "娱乐",
-    "shopping": "购物"
   },
   "noResults": "未找到应用",
   "footer": {

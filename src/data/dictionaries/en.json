@@ -34,7 +34,7 @@
     "overview": "Overview",
     "details": "Details",
     "version": "Version",
-    "lastUpdated": "Last Updated",
+    "lastUpdated": "Info Updated",
     "developer": "Developer",
     "category": "Category",
     "tags": "Tags",
@@ -44,16 +44,6 @@
     "selfhostUrl": "Self-hosted URL",
     "dockerImage": "Docker Image",
     "openApp": "Open App"
-  },
-  "categories": {
-    "productivity": "Productivity",
-    "developer": "Developer Tools",
-    "media": "Media",
-    "social": "Social",
-    "tools": "Tools",
-    "education": "Education",
-    "entertainment": "Entertainment",
-    "shopping": "Shopping"
   },
   "noResults": "No apps found",
   "footer": {
