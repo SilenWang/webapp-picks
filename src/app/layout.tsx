@@ -1,13 +1,28 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
+import { SerwistProvider } from "./serwist";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Web App Store",
-  description: "A curated collection of web applications",
+  title: "Webapp Picks",
+  description: "A curated collection of web applications for FydeOS",
+  applicationName: "Webapp Picks",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "Webapp Picks",
+  },
+  formatDetection: {
+    telephone: false,
+  },
+  manifest: "/manifest.json",
+};
+
+export const viewport: Viewport = {
+  themeColor: "#2563eb",
 };
 
 export default function RootLayout({
@@ -34,7 +49,7 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
-        {children}
+        <SerwistProvider swUrl="/sw.js">{children}</SerwistProvider>
         <Analytics />
       </body>
     </html>

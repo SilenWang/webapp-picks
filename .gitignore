@@ -46,3 +46,8 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 .aider*
+
+# serwist
+public/sw.js
+public/sw*.js
+public/workbox-*.js

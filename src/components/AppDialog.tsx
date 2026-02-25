@@ -29,23 +29,29 @@ interface AppDialogProps {
   onClose: () => void;
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const getDoc = () => (globalThis as any).document;
+
 export function AppDialog({ app, locale, dict, categoryLabel, onClose }: AppDialogProps) {
   const dialogRef = useRef<HTMLDivElement>(null);
   
-  const handleKeyDown = useCallback((e: KeyboardEvent) => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const handleKeyDown = useCallback((e: any) => {
     if (e.key === 'Escape') {
       onClose();
     }
   }, [onClose]);
 
+  const doc = getDoc();
+
   useEffect(() => {
-    document.addEventListener('keydown', handleKeyDown);
-    document.body.style.overflow = 'hidden';
+    doc.addEventListener('keydown', handleKeyDown);
+    doc.body.style.overflow = 'hidden';
     return () => {
-      document.removeEventListener('keydown', handleKeyDown);
-      document.body.style.overflow = '';
+      doc.removeEventListener('keydown', handleKeyDown);
+      doc.body.style.overflow = '';
     };
-  }, [handleKeyDown]);
+  }, [handleKeyDown, doc]);
 
   const dialog = (
     <div 
@@ -230,9 +236,9 @@ export function AppDialog({ app, locale, dict, categoryLabel, onClose }: AppDial
     </div>
   );
 
-  if (typeof document === 'undefined') {
+  if (!doc) {
     return null;
   }
 
-  return createPortal(dialog, document.body);
+  return createPortal(dialog, doc.body);
 }
