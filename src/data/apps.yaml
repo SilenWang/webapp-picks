@@ -614,3 +614,24 @@ apps:
       - presentation
     developer: Microsoft
     lastUpdated: "2024-08-20"
+
+  - id: opencut
+    name:
+      en: Opencut
+      zh: Opencut
+    description:
+      en: "A free, open-source video editor for web, desktop, and mobile."
+      zh: "免费开源的基于Web技术的视频剪辑工具"
+    url: https://opencut.app/
+    icon: https://opencut.app/logos/opencut/svg/logo.svg?dpl=dpl_8ijD11oYkujoixZYbjcZYFKgxbAv
+    pwaSupported: true
+    selfhosted: true
+    dockerImage: codercom/code-server
+    category: image
+    tags:
+      - office
+      - docs
+      - spreadsheet
+      - presentation
+    developer: Microsoft
+    lastUpdated: "2024-08-20"
