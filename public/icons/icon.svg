@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="logoTitle">
+  <title id="logoTitle">Webapp Picks Logo</title>
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#4F46E5"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Main container - Browser window -->
+  <rect x="36" y="36" width="440" height="440" rx="80" ry="80" fill="url(#bgGradient)"/>
+
+  <!-- Window title bar -->
+  <rect x="76" y="76" width="360" height="72" rx="36" ry="36" fill="#FFFFFF" fill-opacity="0.2"/>
+
+  <!-- Three window control dots -->
+  <circle cx="116" cy="112" r="16" fill="#FFFFFF" fill-opacity="0.9"/>
+  <circle cx="160" cy="112" r="16" fill="#FFFFFF" fill-opacity="0.7"/>
+  <circle cx="204" cy="112" r="16" fill="#FFFFFF" fill-opacity="0.5"/>
+
+  <!-- Checkmark representing "pick" selection -->
+  <path d="M176 280 L236 340 L336 220" stroke="#FFFFFF" stroke-width="48" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>
