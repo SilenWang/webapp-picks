@@ -15,8 +15,8 @@ apps:
       - news
       - aggregator
       - rss
-    developer: NewsNow
-    lastUpdated: "2026-02-24"
+    developer: ourongxing
+    lastUpdated: "2026-02-28"
 
   - id: goofish
     name:
@@ -34,7 +34,7 @@ apps:
       - marketplace
       - second-hand
       - shopping
-    developer: Goofish
+    developer: Alibaba
     lastUpdated: "2026-02-24"
 
   - id: fluorite
@@ -92,8 +92,8 @@ apps:
       - reference
       - research
       - bibliography
-    developer: Paperpile
-    lastUpdated: "2026-02-24"
+    developer: Paperpile LLC
+    lastUpdated: "2026-02-28"
 
   - id: photopea
     name:
@@ -170,7 +170,7 @@ apps:
       - notes
       - handwriting
       - productivity
-    developer: GoodNotes
+    developer: Goodnotes Limited
     lastUpdated: "2026-02-24"
 
   - id: napkin-ai
@@ -308,6 +308,7 @@ apps:
       - prototyping
     developer: Figma
     lastUpdated: "2024-08-18"
+
   - id: yuque
     name:
       en: Yuque
@@ -612,8 +613,8 @@ apps:
       - docs
       - spreadsheet
       - presentation
-    developer: Microsoft
-    lastUpdated: "2024-08-20"
+    developer: Shilihu Technology Co., Ltd.
+    lastUpdated: "2026-02-28"
 
   - id: opencut
     name:
@@ -631,5 +632,5 @@ apps:
     tags:
       - image
       - video editing
-    developer: Community
-    lastUpdated: "2026-02-25"
+    developer: OpenCut-app
+    lastUpdated: "2026-02-28"
