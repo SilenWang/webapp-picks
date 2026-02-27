@@ -634,3 +634,246 @@ apps:
       - video editing
     developer: OpenCut-app
     lastUpdated: "2026-02-28"
+
+  - id: uptimekuma
+    name:
+      en: Uptime Kuma
+      zh: Uptime Kuma
+    description:
+      en: "A fancy self-hosted monitoring tool."
+      zh: "一款优雅的自托管监控工具。"
+    url: https://uptime.kuma.pet/
+    icon: https://raw.githubusercontent.com/louislam/uptime-kuma/master/public/icon.svg
+    pwaSupported: false
+    selfhosted: true
+    selfhostUrl: https://github.com/louislam/uptime-kuma
+    category: tools
+    tags:
+      - monitoring
+      - uptime
+      - self-hosted
+    developer: louislam
+    lastUpdated: "2026-02-28"
+
+  - id: openlist
+    name:
+      en: OpenList
+      zh: OpenList
+    description:
+      en: "A new AList Fork to Anti Trust Crisis, a file listing program that supports multiple storage."
+      zh: "AList 的社区分支，支持多种存储介质的文件列表程序。"
+    url: https://doc.oplist.org/
+    icon: https://raw.githubusercontent.com/OpenListTeam/Logo/main/logo.svg
+    pwaSupported: false
+    selfhosted: true
+    selfhostUrl: https://github.com/OpenListTeam/OpenList
+    category: tools
+    tags:
+      - alist
+      - cloud-storage
+      - file-sharing
+    developer: OpenListTeam
+    lastUpdated: "2026-02-28"
+
+  - id: gogs
+    name:
+      en: Gogs
+      zh: Gogs
+    description:
+      en: "A painless self-hosted Git service."
+      zh: "无痛的自托管 Git 服务。"
+    url: https://gogs.io/
+    icon: https://avatars.githubusercontent.com/u/6656686?s=200&v=4
+    pwaSupported: false
+    selfhosted: true
+    selfhostUrl: https://github.com/gogs/gogs
+    category: dev
+    tags:
+      - git
+      - self-hosted
+      - version-control
+    developer: Gogs Team
+    lastUpdated: "2026-02-28"
+
+  - id: gitea
+    name:
+      en: Gitea
+      zh: Gitea
+    description:
+      en: "Git with a cup of tea! Painless self-hosted all-in-one software development service."
+      zh: "一杯茶的时间，轻松自托管的全方位软件开发服务。"
+    url: https://gitea.com/
+    icon: https://about.gitea.com/gitea.svg
+    pwaSupported: false
+    selfhosted: true
+    selfhostUrl: https://github.com/go-gitea/gitea
+    category: dev
+    tags:
+      - git
+      - self-hosted
+      - ci-cd
+    developer: Gitea Team
+    lastUpdated: "2026-02-28"
+
+  - id: memos
+    name:
+      en: Memos
+      zh: Memos
+    description:
+      en: "An open-source, self-hosted note-taking service."
+      zh: "开源自托管笔记服务。"
+    url: https://usememos.com/
+    icon: https://raw.githubusercontent.com/usememos/.github/refs/heads/main/assets/logo-rounded.png
+    pwaSupported: false
+    selfhosted: true
+    selfhostUrl: https://github.com/usememos/memos
+    category: office
+    tags:
+      - notes
+      - self-hosted
+      - markdown
+    developer: usememos
+    lastUpdated: "2026-02-28"
+
+  - id: web-mediadevices-player
+    name:
+      en: Web MediaDevices Player
+      zh: Web MediaDevices Player
+    description:
+      en: "Web-based HDMI capture card and webcam viewer, supports screenshot, video recording, and KVM keyboard/mouse control."
+      zh: "网页版 HDMI 采集卡 / Webcam 查看器，支持截屏、录像、基于 CH9329 实现 KVM 键鼠控制。"
+    url: https://canwdev.github.io/web-mediadevices-player/
+    icon: https://canwdev.github.io/web-mediadevices-player/favicon-192.png
+    pwaSupported: true
+    selfhosted: true
+    selfhostUrl: https://github.com/canwdev/web-mediadevices-player
+    category: media
+    tags:
+      - mediadevices
+      - webcam
+      - streaming
+      - video
+    developer: canwdev
+    lastUpdated: "2026-02-28"
+
+  - id: snapdrop
+    name:
+      en: Snapdrop
+      zh: Snapdrop
+    description:
+      en: "A Progressive Web App for local file sharing, inspired by Apple's AirDrop."
+      zh: "本地文件共享的渐进式 Web 应用，灵感来自苹果 AirDrop。"
+    url: https://snapdrop.net/
+    icon: https://www.snap-drop.net/images/android-chrome-192x192.png
+    pwaSupported: true
+    selfhosted: true
+    selfhostUrl: https://github.com/SnapDrop/snapdrop
+    category: tools
+    tags:
+      - pwa
+      - webrtc
+      - file-sharing
+      - local-network
+    developer: SnapDrop Team
+    lastUpdated: "2026-02-28"
+
+  - id: fydedrop
+    name:
+      en: FyDrop
+      zh: 燧炻传送
+    description:
+      en: "P2P file transfer between devices in the same network, based on Snapdrop."
+      zh: "同网络下设备间的 P2P 文件传输，基于 Snapdrop 构建。"
+    url: https://drop.fydeos.com/
+    icon: https://drop.fydeos.com/images/favicon-zh.png
+    pwaSupported: true
+    selfhosted: false
+    category: tools
+    tags:
+      - pwa
+      - webrtc
+      - file-sharing
+      - local-network
+    developer: FydeOS
+    lastUpdated: "2026-02-28"
+
+  - id: leanote
+    name:
+      en: Leanote
+      zh: Leanote
+    description:
+      en: "Not Just A Notepad! A feature-rich note-taking and blogging platform with Markdown support."
+      zh: "不只是笔记！支持 Markdown 的富文本笔记和博客平台。"
+    url: https://leanote.com/
+    icon: https://leanote.com/favicon.ico
+    pwaSupported: false
+    selfhosted: true
+    selfhostUrl: https://github.com/leanote/leanote
+    category: office
+    tags:
+      - notes
+      - markdown
+      - blogging
+      - knowledge-management
+    developer: Leanote Team
+    lastUpdated: "2026-02-28"
+
+  - id: vectorpea
+    name:
+      en: Vectorpea
+      zh: Vectorpea
+    description:
+      en: "Online vector graphics editor for SVG editing."
+      zh: "在线 SVG 矢量图形编辑器。"
+    url: https://vectorpea.com/
+    icon: https://www.vecpea.com/promo/icon512_vp.png
+    pwaSupported: false
+    selfhosted: false
+    category: image
+    tags:
+      - vector
+      - svg
+      - editor
+      - design
+    developer: Vectorpea
+    lastUpdated: "2026-02-28"
+
+  - id: jampea
+    name:
+      en: Jampea
+      zh: Jampea
+    description:
+      en: "Online MIDI music editor and composition tool."
+      zh: "在线 MIDI 音乐编辑和作曲工具。"
+    url: https://jampea.com/
+    icon: https://www.vecpea.com/promo/icon512_jp.png
+    pwaSupported: false
+    selfhosted: false
+    category: media
+    tags:
+      - music
+      - midi
+      - audio
+      - editor
+    developer: Jampea
+    lastUpdated: "2026-02-28"
+
+  - id: biorender
+    name:
+      en: BioRender
+      zh: BioRender
+    description:
+      en: "Create professional science figures in seconds with thousands of pre-made icons and templates."
+      zh: "使用数千个预制图标和模板快速创建专业科学图表。"
+    url: https://biorender.com/
+    icon: https://pbs.twimg.com/profile_images/1770858995206574080/7_dUm2Nt_400x400.jpg
+    pwaSupported: false
+    selfhosted: false
+    category: image
+    tags:
+      - science
+      - illustration
+      - biology
+      - design
+    developer: BioRender
+    lastUpdated: "2026-02-28"
