@@ -130,6 +130,12 @@ export function AppDialog({ app, locale, dict, categoryLabel, onClose }: AppDial
                 <h1 className="text-2xl font-bold">{app.name[locale]}</h1>
                 <p className="text-muted-foreground mt-1">{app.description[locale]}</p>
                 
+                {app.review && app.review[locale] && (
+                  <p className="mt-3 p-3 rounded-lg bg-muted/50 text-sm italic">
+                    {app.review[locale]}
+                  </p>
+                )}
+                
                 <div className="flex flex-wrap gap-2 mt-3">
                   {app.pwaSupported && (
                     <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-sm font-medium">

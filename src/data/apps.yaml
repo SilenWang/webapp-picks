@@ -6,6 +6,9 @@ apps:
     description:
       en: "Elegant reading of real-time and hottest news."
       zh: "优雅地阅读实时热门新闻。"
+    review:
+      en: ""
+      zh: "简单易用的新闻聚合榜, 默认带的网站已经可以满足个人的使用需求"
     url: https://newsnow.busiyi.world/
     icon: https://raw.githubusercontent.com/ourongxing/newsnow/main/public/pwa-512x512.png
     pwaSupported: true
@@ -25,6 +28,9 @@ apps:
     description:
       en: "Second-hand marketplace platform for buying and selling used items."
       zh: "二手闲置物品买卖平台。"
+    review:
+      en: ""
+      zh: "目前中国大陆个人卖家可用的二手平台就这一个了, 再怎么骂也得用..."
     url: https://www.goofish.com/
     icon: https://www.google.com/s2/favicons?domain=goofish.com&sz=128
     pwaSupported: false
@@ -44,6 +50,9 @@ apps:
     description:
       en: "An elegant, offline‑first PWA video player for your local media."
       zh: "一个优雅的、以离线优先为理念的 PWA 视频播放器，用于播放你的本地媒体。"
+    review:
+      en: ""
+      zh: "如果觉得FydeOS/ChromeOS自带的本地视频播放功能太简单可以试试这个, 至少进度条拖动不会卡死"
     url: https://fluorite.afcms.dev/
     icon: https://raw.githubusercontent.com/AFCMS/fluorite/master/public/fluorite.svg
     pwaSupported: true
@@ -64,6 +73,9 @@ apps:
     description:
       en: "Note-taking application by FydeOS."
       zh: "FydeOS 出品的笔记应用。"
+    review:
+      en: ""
+      zh: "基于Affine的项目, 点开即用, 暂时也没有收费计划"
     url: https://notes.fydeos.io/
     icon: https://www.google.com/s2/favicons?domain=fydeos.io&sz=128
     pwaSupported: true
@@ -83,6 +95,9 @@ apps:
     description:
       en: "Reference management software for researchers."
       zh: "面向研究人员的文献管理软件。"
+    review:
+      en: ""
+      zh: "纯网页应用, 存储绑定Google Drive, 收费即使换算成人民币也并不贵, 是FydeOS/ChromeOS下比较好的选择了"
     url: https://app.paperpile.com/
     icon: https://www.google.com/s2/favicons?domain=paperpile.com&sz=128
     pwaSupported: false
@@ -102,6 +117,9 @@ apps:
     description:
       en: "Free online image editor supporting PSD, XCF, Sketch."
       zh: "免费在线图像编辑器，支持 PSD、XCF、Sketch 等格式。"
+    review:
+      en: ""
+      zh: "我愿称之为PhotoShop最强替代品, 本身并不开源, 但是有第三方逆向的旧版本可自部署"
     url: https://www.photopea.com/
     icon: https://www.google.com/s2/favicons?domain=photopea.com&sz=128
     pwaSupported: true
@@ -121,6 +139,9 @@ apps:
     description:
       en: "Online flowchart and diagram drawing tool."
       zh: "在线流程图和图表绘制工具。"
+    review:
+      en: ""
+      zh: "非常好用的矢量图绘制工具, 目前很多网页办公软件的流程图作图工具都是内嵌的它"
     url: https://app.diagrams.net/
     icon: https://www.google.com/s2/favicons?domain=diagrams.net&sz=128
     pwaSupported: true
@@ -141,6 +162,9 @@ apps:
     description:
       en: "Virtual whiteboard for hand-drawn style diagrams."
       zh: "手绘风格的白板绘图工具。"
+    review:
+      en: ""
+      zh: "很有特色的白板作图工具, 独特的手绘风格令人印象深刻, 也比较早就接入了AI绘图功能"
     url: https://excalidraw.com/
     icon: https://www.google.com/s2/favicons?domain=excalidraw.com&sz=128
     pwaSupported: true
@@ -161,6 +185,9 @@ apps:
     description:
       en: "Digital note-taking app"
       zh: "数字笔记应用。"
+    review:
+      en: ""
+      zh: "用户群体很大的笔记应用, 虽然因越来越贵被成天骂, 但是毕竟给了网页版, 也是可选之一"
     url: https://web.goodnotes.com/
     icon: https://www.google.com/s2/favicons?domain=goodnotes.com&sz=128
     pwaSupported: false
@@ -180,6 +207,9 @@ apps:
     description:
       en: "AI-powered visual thinking and content creation tool."
       zh: "AI 驱动的视觉思维和内容创作工具。"
+    review:
+      en: ""
+      zh: "2年前就推出的AI驱动的类Slide生成工具, 原本非常惊艳, 但现在大概大家都用nano banana了..."
     url: https://app.napkin.ai
     icon: https://www.google.com/s2/favicons?domain=napkin.ai&sz=128
     pwaSupported: false
@@ -199,6 +229,9 @@ apps:
     description:
       en: "Online scientific illustration and drawing platform."
       zh: "在线科研绘图平台。"
+    review:
+      en: ""
+      zh: "应该是为了平替biorender产生的平台, 可以一用"
     url: https://www.figdraw.com/
     icon: https://static.home-for-researchers.com/home/paint_front/pro/img/hr_family/figdrawlogo.svg
     pwaSupported: false
@@ -218,6 +251,9 @@ apps:
     description:
       en: "Tool for picking and converting map coordinates."
       zh: "地图坐标拾取和转换工具。"
+    review:
+      en: ""
+      zh: "ChatGPT给我推荐的小工具, 需要绘制地图标点图的时候还挺实用"
     url: https://lbs.baidu.com/maptool/getpoint
     icon: https://www.google.com/s2/favicons?domain=baidu.com&sz=128
     pwaSupported: false
@@ -237,6 +273,9 @@ apps:
     description:
       en: "Spotify is all the music you'll ever need."
       zh: "Spotify，你所需的音乐。"
+    review:
+      en: ""
+      zh: "音乐平台, 听音乐的选择之一"
     url: https://open.spotify.com/
     icon: https://www-img.fydeos.com/uploads/95ac73eca26fc383b57663a9b0a31b810e4827adf4278bed076341167c8d028889f3.png
     pwaSupported: false
@@ -256,6 +295,9 @@ apps:
     description:
       en: "All-in-one workspace for notes, docs, and project management."
       zh: "集笔记、文档和项目管理于一体的多功能工作空间。"
+    review:
+      en: ""
+      zh: "非常流行的知识一体化笔记, 用过, 但还是更习惯直接写README.md"
     url: https://www.notion.so/
     icon: https://www.notion.com/front-static/favicon.ico
     pwaSupported: false
@@ -276,6 +318,9 @@ apps:
     description:
       en: "Code anywhere, anytime, in your browser."
       zh: "随时随地在浏览器中编写代码。"
+    review:
+      en: ""
+      zh: "官方的VSCode Web版本, 配上Tunnel和插件几乎可以使用90%以上的VSCode桌面功能"
     url: https://vscode.dev/
     icon: https://vscode.dev/static/stable/favicon.ico
     pwaSupported: false
@@ -297,6 +342,9 @@ apps:
     description:
       en: "Collaborative interface design tool."
       zh: "协作界面设计工具。"
+    review:
+      en: ""
+      zh: "非常流行的设计软件/平台... 有机会会学习一下"
     url: https://www.figma.com/
     icon: https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/500px-Figma-logo.svg.png
     pwaSupported: false
@@ -316,6 +364,9 @@ apps:
     description:
       en: "Knowledge management and collaboration platform."
       zh: "知识管理和协作平台。"
+    review:
+      en: ""
+      zh: "团队知识库软件, 曾经因为团队要求被动使用过..."
     url: https://www.yuque.com/
     icon: https://mdn.alipayobjects.com/huamei_0prmtq/afts/img/A*sRUdR543RjcAAAAAAAAAAAAADvuFAQ/original
     pwaSupported: false
@@ -335,6 +386,9 @@ apps:
     description:
       en: "Online document collaboration."
       zh: "在线文档协作。"
+    review:
+      en: ""
+      zh: "团队知识库软件, 曾经因为团队要求被动使用过..."
     url: https://shimo.im/
     icon: https://as.smgv.cn/static/lizard-service-homepage/assets/logo_icon.78308823.png
     pwaSupported: false
@@ -354,6 +408,9 @@ apps:
     description:
       en: "Enterprise collaboration platform."
       zh: "企业协作平台。"
+    review:
+      en: ""
+      zh: "相比钉钉和企业微信, 是Web端功能最全的一个了, 然而一如既往的大陆版本强引导下载App和大陆手机号强制注册飞书而不是Lark, 实际使用起来功能估计不会完整"
     url: https://www.feishu.cn/
     icon: https://p1-hera.feishucdn.com/tos-cn-i-jbbdkfciu3/1ec7129d900e442d8501d810efdaa369~tplv-jbbdkfciu3-image:0:0.image
     pwaSupported: false
@@ -373,6 +430,9 @@ apps:
     description:
       en: "Smart document collaboration platform."
       zh: "智能文档协作平台。"
+    review:
+      en: ""
+      zh: "能用, 但确实不好用, 部分依赖桌面客户端的功能缺失"
     url: https://docs.qq.com/
     icon: https://raw.githubusercontent.com/lobehub/lobe-icons/refs/heads/master/packages/static-png/light/tencent-color.png
     pwaSupported: false
@@ -392,6 +452,9 @@ apps:
     description:
       en: "Quick notes and thinking tools."
       zh: "快速笔记和思考工具。"
+    review:
+      en: ""
+      zh: "简洁的日记工具, 因为知道有Memo后再没用过了..."
     url: https://flomoapp.com/
     icon: https://flomoapp.com/images/logo.png
     pwaSupported: false
@@ -411,6 +474,9 @@ apps:
     description:
       en: "Compress images in your browser."
       zh: "在浏览器中压缩图片。"
+    review:
+      en: ""
+      zh: "方便好用的图片压缩工具, 点开即用"
     url: https://squoosh.app/
     icon: https://squoosh.app/c/icon-demo-logo-326ed9b6.png
     pwaSupported: false
@@ -431,6 +497,9 @@ apps:
     description:
       en: "Online regex debugger and tester."
       zh: "在线正则表达式调试和测试工具。"
+    review:
+      en: ""
+      zh: "最近才知道还有这种东西, 以前都是用VSCode内置的搜索来测的..."
     url: https://regex101.com/
     icon: https://regex101.com/static/assets/icon-57.png
     pwaSupported: false
@@ -451,6 +520,9 @@ apps:
     description:
       en: "Video creation platform powered by AI."
       zh: "AI驱动的视频创作平台。"
+    review:
+      en: ""
+      zh: "看到过, 但确实没实际用过"
     url: https://lumen5.com/
     icon: https://cdn.lumen5.com/lumen5-site-images/favicon/2025/favicon.ico
     pwaSupported: false
@@ -470,6 +542,9 @@ apps:
     description:
       en: "Stream over 100 million songs."
       zh: "流媒体播放超过1亿首歌曲。"
+    review:
+      en: ""
+      zh: "苹果用户的听歌选择, 不过真的会有用IPhone+ChromeOS这么用么..."
     url: https://music.apple.com/
     icon: https://music.apple.com/assets/favicon/favicon-180.png
     pwaSupported: false
@@ -489,6 +564,9 @@ apps:
     description:
       en: "Data visualization and storytelling platform."
       zh: "数据可视化和故事讲述平台。"
+    review:
+      en: ""
+      zh: "数据可视化的平台, 不想写代码的偷懒之选"
     url: https://flourish.studio/
     icon: https://flourish.studio/favicon.ico
     pwaSupported: false
@@ -508,6 +586,9 @@ apps:
     description:
       en: "Simple, free, responsive one-page sites."
       zh: "简单、免费、响应式单页网站。"
+    review:
+      en: ""
+      zh: "帮助创建网站的服务, 但是感觉现在AI能做到七八成的效果了..."
     url: https://carrd.co/
     icon: https://carrd.co/assets/docs/images/brand/png/icon-color.png
     pwaSupported: false
@@ -527,6 +608,9 @@ apps:
     description:
       en: "Music and audio distribution platform."
       zh: "音乐和音频发行平台。"
+    review:
+      en: ""
+      zh: "听音乐的平台, 自己用的不多"
     url: https://soundcloud.com/
     icon: https://images.seeklogo.com/logo-png/15/1/soundcloud-logo-png_seeklogo-157945.png
     pwaSupported: false
@@ -546,6 +630,9 @@ apps:
     description:
       en: "Free online mind mapping and brainstorming."
       zh: "免费在线思维导图和头脑风暴工具。"
+    review:
+      en: ""
+      zh: "功能很好, 但确实有些贵了..."
     url: https://gitmind.com/
     icon: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0q5dOj6U4S9ln8gF51CCjCHVNFrou0rGBQw&s
     pwaSupported: false
@@ -565,6 +652,9 @@ apps:
     description:
       en: "Visual tool for creative projects."
       zh: "创意项目的视觉工具。"
+    review:
+      en: ""
+      zh: "躺在收藏夹很久, 从来没真用过..."
     url: https://milanote.com/
     icon: https://milanote.com/favicon.ico
     pwaSupported: false
@@ -584,6 +674,9 @@ apps:
     description:
       en: "Outline-based note-taking and brainstorming."
       zh: "基于大纲的笔记和头脑风暴工具。"
+    review:
+      en: ""
+      zh: "帮助整理大纲和笔记的工具, 目前来说可能还是展示才用的上"
     url: https://mubu.com/
     icon: https://img.wervps.gedoucheng.com/wervps/mac-20220509/03104257_65bd4b0c1c35161.png
     pwaSupported: false
@@ -603,6 +696,9 @@ apps:
     description:
       en: "Online Office suite."
       zh: "在线办公套件。"
+    review:
+      en: ""
+      zh: "办公必备... 除了卡都还挺好"
     url: https://office.com/
     icon: https://www.google.com/s2/favicons?domain=microsoft.com&sz=128
     pwaSupported: false
@@ -623,6 +719,9 @@ apps:
     description:
       en: "A free, open-source video editor for web, desktop, and mobile."
       zh: "免费开源的基于Web技术的视频剪辑工具"
+    review:
+      en: ""
+      zh: "为了替代Capcut而生的项目, 核心功能以完成, 但是基本功能(转场和特效)还在逐步开发中"
     url: https://opencut.app/
     icon: https://opencut.app/logos/opencut/svg/logo.svg?dpl=dpl_8ijD11oYkujoixZYbjcZYFKgxbAv
     pwaSupported: true
@@ -642,6 +741,9 @@ apps:
     description:
       en: "A fancy self-hosted monitoring tool."
       zh: "一款优雅的自托管监控工具。"
+    review:
+      en: ""
+      zh: "配置简单的网站/服务可用性监控, 就我狗命的看门管家"
     url: https://uptime.kuma.pet/
     icon: https://raw.githubusercontent.com/louislam/uptime-kuma/master/public/icon.svg
     pwaSupported: false
@@ -662,6 +764,9 @@ apps:
     description:
       en: "A new AList Fork to Anti Trust Crisis, a file listing program that supports multiple storage."
       zh: "AList 的社区分支，支持多种存储介质的文件列表程序。"
+    review:
+      en: ""
+      zh: "支持超多协议的聚合网盘, AList出售事件后的最佳继任者"
     url: https://doc.oplist.org/
     icon: https://raw.githubusercontent.com/OpenListTeam/Logo/main/logo.svg
     pwaSupported: false
@@ -682,6 +787,9 @@ apps:
     description:
       en: "A painless self-hosted Git service."
       zh: "无痛的自托管 Git 服务。"
+    review:
+      en: ""
+      zh: "功能精简的Git服务, 只是由于原作者的理念, 没有继续增加更复杂的功能"
     url: https://gogs.io/
     icon: https://avatars.githubusercontent.com/u/6656686?s=200&v=4
     pwaSupported: false
@@ -702,6 +810,9 @@ apps:
     description:
       en: "Git with a cup of tea! Painless self-hosted all-in-one software development service."
       zh: "一杯茶的时间，轻松自托管的全方位软件开发服务。"
+    review:
+      en: ""
+      zh: "衍生自Gogs的社区维护的Git服务, 现在连Action用了, 是Github的轻量级替代"
     url: https://gitea.com/
     icon: https://about.gitea.com/gitea.svg
     pwaSupported: false
@@ -722,6 +833,9 @@ apps:
     description:
       en: "An open-source, self-hosted note-taking service."
       zh: "开源自托管笔记服务。"
+    review:
+      en: ""
+      zh: "我也不知道它和Flomo谁先, 但是它开源且轻量, 所以我选它"
     url: https://usememos.com/
     icon: https://raw.githubusercontent.com/usememos/.github/refs/heads/main/assets/logo-rounded.png
     pwaSupported: false
@@ -742,6 +856,9 @@ apps:
     description:
       en: "Web-based HDMI capture card and webcam viewer, supports screenshot, video recording, and KVM keyboard/mouse control."
       zh: "网页版 HDMI 采集卡 / Webcam 查看器，支持截屏、录像、基于 CH9329 实现 KVM 键鼠控制。"
+    review:
+      en: ""
+      zh: "不记得什么时候翻到的Web技术采集卡, 没啥更好的选择了也"
     url: https://canwdev.github.io/web-mediadevices-player/
     icon: https://canwdev.github.io/web-mediadevices-player/favicon-192.png
     pwaSupported: true
@@ -763,6 +880,9 @@ apps:
     description:
       en: "A Progressive Web App for local file sharing, inspired by Apple's AirDrop."
       zh: "本地文件共享的渐进式 Web 应用，灵感来自苹果 AirDrop。"
+    review:
+      en: ""
+      zh: "非常有意思的局域网穿文件应用, 传大文件和多个文件稍有不便"
     url: https://snapdrop.net/
     icon: https://www.snap-drop.net/images/android-chrome-192x192.png
     pwaSupported: true
@@ -784,6 +904,9 @@ apps:
     description:
       en: "P2P file transfer between devices in the same network, based on Snapdrop."
       zh: "同网络下设备间的 P2P 文件传输，基于 Snapdrop 构建。"
+    review:
+      en: ""
+      zh: "燧炻基于SnapDrop构建的内网传输App, 直接整合在文件应用中, 还挺实用"
     url: https://drop.fydeos.com/
     icon: https://drop.fydeos.com/images/favicon-zh.png
     pwaSupported: true
@@ -804,6 +927,9 @@ apps:
     description:
       en: "Not Just A Notepad! A feature-rich note-taking and blogging platform with Markdown support."
       zh: "不只是笔记！支持 Markdown 的富文本笔记和博客平台。"
+    review:
+      en: ""
+      zh: "我最早用来写Markdown笔记的应用, 没有倒闭已是不易"
     url: https://leanote.com/
     icon: https://leanote.com/favicon.ico
     pwaSupported: false
@@ -825,6 +951,9 @@ apps:
     description:
       en: "Online vector graphics editor for SVG editing."
       zh: "在线 SVG 矢量图形编辑器。"
+    review:
+      en: ""
+      zh: "Photopea作者的新作品, 我只能说作者NB..."
     url: https://vectorpea.com/
     icon: https://www.vecpea.com/promo/icon512_vp.png
     pwaSupported: false
@@ -845,6 +974,9 @@ apps:
     description:
       en: "Online MIDI music editor and composition tool."
       zh: "在线 MIDI 音乐编辑和作曲工具。"
+    review:
+      en: ""
+      zh: "Photopea作者的新作品, 我只能说作者NB..."
     url: https://jampea.com/
     icon: https://www.vecpea.com/promo/icon512_jp.png
     pwaSupported: false
@@ -865,6 +997,9 @@ apps:
     description:
       en: "Create professional science figures in seconds with thousands of pre-made icons and templates."
       zh: "使用数千个预制图标和模板快速创建专业科学图表。"
+    review:
+      en: ""
+      zh: "科研示意图首选, 非常贵, 但是资源最丰富..."
     url: https://biorender.com/
     icon: https://pbs.twimg.com/profile_images/1770858995206574080/7_dUm2Nt_400x400.jpg
     pwaSupported: false

@@ -22,6 +22,7 @@ export interface WebApp {
   id: string;
   name: LocalizedString;
   description: LocalizedString;
+  review?: LocalizedString;
   url: string;
   icon: string;
   screenshot?: string;
