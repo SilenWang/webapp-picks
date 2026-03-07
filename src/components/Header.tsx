@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useCallback, useState, useEffect, useRef } from 'react';
 import { Locale } from '@/lib/types';
-import { Globe, Sun, Moon, Monitor, ChevronDown, Check, BookOpen } from 'lucide-react';
+import { Globe, Sun, Moon, Monitor, Check, BookOpen, MoreHorizontal } from 'lucide-react';
 
 type Theme = 'light' | 'dark' | 'auto';
 
@@ -37,11 +37,14 @@ export function Header({ locale, dict }: HeaderProps) {
   const [mounted, setMounted] = useState(false);
   const [themeDropdownOpen, setThemeDropdownOpen] = useState(false);
   const [langDropdownOpen, setLangDropdownOpen] = useState(false);
+  const [moreMenuOpen, setMoreMenuOpen] = useState(false);
   const [langDropdownPos, setLangDropdownPos] = useState<DropdownPosition>({ top: 0, left: 0 });
   const [themeDropdownPos, setThemeDropdownPos] = useState<DropdownPosition>({ top: 0, left: 0 });
+  const [moreMenuPos, setMoreMenuPos] = useState<DropdownPosition>({ top: 0, left: 0 });
   
   const themeTriggerRef = useRef<HTMLButtonElement>(null);
   const langTriggerRef = useRef<HTMLButtonElement>(null);
+  const moreMenuTriggerRef = useRef<HTMLButtonElement>(null);
 
   const applyTheme = useCallback((themeValue: Theme) => {
     const apply = (isDark: boolean) => {
@@ -88,6 +91,9 @@ export function Header({ locale, dict }: HeaderProps) {
       if (langTriggerRef.current && !langTriggerRef.current.contains(event.target as Node)) {
         setLangDropdownOpen(false);
       }
+      if (moreMenuTriggerRef.current && !moreMenuTriggerRef.current.contains(event.target as Node)) {
+        setMoreMenuOpen(false);
+      }
     };
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
@@ -125,6 +131,12 @@ export function Header({ locale, dict }: HeaderProps) {
     updateDropdownPosition(newState, themeTriggerRef, setThemeDropdownPos, 160);
   }, [themeDropdownOpen, updateDropdownPosition]);
 
+  const handleMoreMenuToggle = useCallback(() => {
+    const newState = !moreMenuOpen;
+    setMoreMenuOpen(newState);
+    updateDropdownPosition(newState, moreMenuTriggerRef, setMoreMenuPos, 180);
+  }, [moreMenuOpen, updateDropdownPosition]);
+
   useEffect(() => {
     if (langDropdownOpen) {
       updateDropdownPosition(true, langTriggerRef, setLangDropdownPos, 140);
@@ -136,6 +148,12 @@ export function Header({ locale, dict }: HeaderProps) {
       updateDropdownPosition(true, themeTriggerRef, setThemeDropdownPos, 160);
     }
   }, [themeDropdownOpen, updateDropdownPosition]);
+
+  useEffect(() => {
+    if (moreMenuOpen) {
+      updateDropdownPosition(true, moreMenuTriggerRef, setMoreMenuPos, 180);
+    }
+  }, [moreMenuOpen, updateDropdownPosition]);
 
   const handleSearchChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
     const query = e.target.value;
@@ -186,13 +204,13 @@ export function Header({ locale, dict }: HeaderProps) {
         <div className="header-right">
           <Link
             href={`/${locale}/about`}
-            className="dropdown-trigger"
+            className="dropdown-trigger desktop-only"
             aria-label={dict.header.about}
           >
             <BookOpen size={18} />
           </Link>
 
-          <div className="dropdown-wrapper">
+          <div className="dropdown-wrapper desktop-only">
             <button 
               ref={langTriggerRef}
               className="dropdown-trigger"
@@ -232,7 +250,7 @@ export function Header({ locale, dict }: HeaderProps) {
             )}
           </div>
 
-          <div className="dropdown-wrapper">
+          <div className="dropdown-wrapper desktop-only">
             <button 
               ref={themeTriggerRef}
               className="dropdown-trigger"
@@ -273,6 +291,94 @@ export function Header({ locale, dict }: HeaderProps) {
                   onMouseDown={(e) => {
                     e.preventDefault();
                     handleThemeChange('auto');
+                  }}
+                >
+                  <Monitor size={16} />
+                  {dict.header.themeAuto}
+                  {theme === 'auto' && <Check size={14} className="dropdown-check" />}
+                </button>
+              </div>
+            )}
+          </div>
+
+          <div className="dropdown-wrapper mobile-only">
+            <button 
+              ref={moreMenuTriggerRef}
+              className="dropdown-trigger"
+              onClick={handleMoreMenuToggle}
+              aria-label="More"
+            >
+              <MoreHorizontal size={20} />
+            </button>
+            {moreMenuOpen && (
+              <div 
+                className="dropdown-menu"
+                style={{ top: moreMenuPos.top, left: moreMenuPos.left }}
+              >
+                <Link 
+                  href={`/${locale}/about`}
+                  className="dropdown-item"
+                  onClick={() => setMoreMenuOpen(false)}
+                >
+                  <BookOpen size={16} />
+                  {dict.header.about}
+                </Link>
+                <div className="dropdown-divider" />
+                <div className="dropdown-label">{dict.header.language}</div>
+                <button 
+                  className="dropdown-item"
+                  onMouseDown={(e) => {
+                    e.preventDefault();
+                    setMoreMenuOpen(false);
+                    router.push('/en');
+                  }}
+                >
+                  English
+                  {locale === 'en' && <Check size={14} className="dropdown-check" />}
+                </button>
+                <button 
+                  className="dropdown-item"
+                  onMouseDown={(e) => {
+                    e.preventDefault();
+                    setMoreMenuOpen(false);
+                    router.push('/zh');
+                  }}
+                >
+                  中文
+                  {locale === 'zh' && <Check size={14} className="dropdown-check" />}
+                </button>
+                <div className="dropdown-divider" />
+                <div className="dropdown-label">{dict.header.theme}</div>
+                <button 
+                  className="dropdown-item"
+                  onMouseDown={(e) => {
+                    e.preventDefault();
+                    handleThemeChange('light');
+                    setMoreMenuOpen(false);
+                  }}
+                >
+                  <Sun size={16} />
+                  {dict.header.themeLight}
+                  {theme === 'light' && <Check size={14} className="dropdown-check" />}
+                </button>
+                <button 
+                  className="dropdown-item"
+                  onMouseDown={(e) => {
+                    e.preventDefault();
+                    handleThemeChange('dark');
+                    setMoreMenuOpen(false);
+                  }}
+                >
+                  <Moon size={16} />
+                  {dict.header.themeDark}
+                  {theme === 'dark' && <Check size={14} className="dropdown-check" />}
+                </button>
+                <button 
+                  className="dropdown-item"
+                  onMouseDown={(e) => {
+                    e.preventDefault();
+                    handleThemeChange('auto');
+                    setMoreMenuOpen(false);
                   }}
                 >
                   <Monitor size={16} />
