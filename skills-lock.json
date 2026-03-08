@@ -6,10 +6,10 @@
       "sourceType": "github",
       "computedHash": "409117e97ea4689e138a2080bfa94893e31ea216fbd0220d834dbdb791ecbe0e"
     },
-    "seo": {
-      "source": "addyosmani/web-quality-skills",
+    "seo-geo": {
+      "source": "resciencelab/opc-skills",
       "sourceType": "github",
-      "computedHash": "f1fed683b76913d26fbf1aa1e008e6932f7771701fc3a79925b042236aa4681a"
+      "computedHash": "56f90ba46b36563bb5461feb8462aed9283e74dfc4cdac2a98c42c4bc86a95be"
     },
     "web-design-guidelines": {
       "source": "vercel-labs/agent-skills",

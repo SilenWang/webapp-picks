@@ -1,4 +1,5 @@
 import { Suspense } from 'react';
+import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { Locale, Category } from '@/lib/types';
 import { getCategories } from '@/lib/apps';
@@ -7,12 +8,45 @@ import { Header } from '@/components/Header';
 import { FilterBarClient } from '@/components/FilterBarClient';
 import { BottomBar } from '@/components/BottomBar';
 
+const BASE_URL = "https://webapp-picks.cc";
+
 interface PageProps {
   params: Promise<{ lang: Locale }>;
 }
 
 export async function generateStaticParams() {
   return [{ lang: 'zh' }, { lang: 'en' }];
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { lang } = await params;
+  
+  const titles: Record<Locale, string> = {
+    zh: "关于 - Webapp Picks",
+    en: "About - Webapp Picks",
+  };
+  
+  const descriptions: Record<Locale, string> = {
+    zh: "了解 Webapp Picks 的由来和收录标准",
+    en: "Learn about the origin and selection criteria of Webapp Picks",
+  };
+  
+  return {
+    title: titles[lang],
+    description: descriptions[lang],
+    alternates: {
+      canonical: `${BASE_URL}/${lang}/about`,
+      languages: {
+        en: `${BASE_URL}/en/about`,
+        zh: `${BASE_URL}/zh/about`,
+      },
+    },
+    openGraph: {
+      title: titles[lang],
+      description: descriptions[lang],
+      url: `${BASE_URL}/${lang}/about`,
+    },
+  };
 }
 
 export default async function AboutPage({ params }: PageProps) {

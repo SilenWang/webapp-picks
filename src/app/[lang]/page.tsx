@@ -1,4 +1,5 @@
 import { Suspense } from 'react';
+import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { Locale, Category } from '@/lib/types';
 import { filterApps, getCategories } from '@/lib/apps';
@@ -7,6 +8,8 @@ import { Header } from '@/components/Header';
 import { FilterBarClient } from '@/components/FilterBarClient';
 import { AppList } from '@/components/AppList';
 import { BottomBar } from '@/components/BottomBar';
+
+const BASE_URL = "https://webapp-picks.cc";
 
 interface PageProps {
   params: Promise<{ lang: Locale }>;
@@ -20,6 +23,37 @@ interface PageProps {
 
 export async function generateStaticParams() {
   return [{ lang: 'zh' }, { lang: 'en' }];
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { lang } = await params;
+  
+  const titles: Record<Locale, string> = {
+    zh: "Webapp Picks",
+    en: "Webapp Picks",
+  };
+  
+  const descriptions: Record<Locale, string> = {
+    zh: "发现并安装适用于 FydeOS 的实用网页应用。涵盖新闻、工具、生产力等多种分类。",
+    en: "Discover and install useful webapps for FydeOS. Covering news, tools, productivity and more.",
+  };
+  
+  return {
+    title: titles[lang],
+    description: descriptions[lang],
+    alternates: {
+      canonical: `${BASE_URL}/${lang}`,
+      languages: {
+        en: `${BASE_URL}/en`,
+        zh: `${BASE_URL}/zh`,
+      },
+    },
+    openGraph: {
+      title: titles[lang],
+      description: descriptions[lang],
+      url: `${BASE_URL}/${lang}`,
+    },
+  };
 }
 
 export default async function HomePage({ params, searchParams }: PageProps) {

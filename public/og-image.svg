@@ -1,0 +1,38 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background - Dark with contrast -->
+  <rect width="1200" height="630" fill="#1a1a2e"/>
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#16213e"/>
+    </linearGradient>
+    <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#4F46E5"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Icon Container -->
+  <rect x="120" y="115" width="400" height="400" rx="80" ry="80" fill="url(#iconGradient)"/>
+  
+  <!-- Window title bar -->
+  <rect x="160" y="155" width="320" height="64" rx="32" ry="32" fill="#FFFFFF" fill-opacity="0.2"/>
+  
+  <!-- Three window control dots -->
+  <circle cx="200" cy="187" r="14" fill="#FFFFFF" fill-opacity="0.9"/>
+  <circle cx="240" cy="187" r="14" fill="#FFFFFF" fill-opacity="0.7"/>
+  <circle cx="280" cy="187" r="14" fill="#FFFFFF" fill-opacity="0.5"/>
+  
+  <!-- Checkmark -->
+  <path d="M220 300 L280 360 L380 240" stroke="#FFFFFF" stroke-width="40" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  
+  <!-- Text Content -->
+  <text x="620" y="280" font-family="system-ui, -apple-system, sans-serif" font-size="72" font-weight="bold" fill="white">Webapp Picks</text>
+  <text x="620" y="370" font-family="system-ui, -apple-system, sans-serif" font-size="32" fill="white" fill-opacity="0.9">精选 Web 应用合集</text>
+  <text x="620" y="420" font-family="system-ui, -apple-system, sans-serif" font-size="24" fill="white" fill-opacity="0.7">Curated Web Apps for FydeOS</text>
+  
+  <!-- Decorative line -->
+  <rect x="620" y="460" width="200" height="4" rx="2" fill="#f97316"/>
+</svg>
