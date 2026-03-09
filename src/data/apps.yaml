@@ -170,7 +170,7 @@ apps:
     pwaSupported: true
     selfhosted: true
     selfhostUrl: https://github.com/excalidraw/excalidraw
-    categories: [image]
+    categories: [image, ai]
     tags:
       - whiteboard
       - sketch
@@ -214,7 +214,7 @@ apps:
     icon: https://www.google.com/s2/favicons?domain=napkin.ai&sz=128
     pwaSupported: false
     selfhosted: false
-    categories: [ai]
+    categories: [ai, office]
     tags:
       - ai
       - visualization
@@ -302,7 +302,7 @@ apps:
     icon: https://www.notion.com/front-static/favicon.ico
     pwaSupported: false
     selfhosted: false
-    categories: [office]
+    categories: [office, ai]
     tags:
       - notes
       - docs
@@ -423,7 +423,7 @@ apps:
     developer: ByteDance
     lastUpdated: "2024-08-15"
 
-  - id: tengxun-docs
+  - id: tencent-docs
     name:
       en: Tencent Docs
       zh: 腾讯文档
@@ -527,7 +527,7 @@ apps:
     icon: https://cdn.lumen5.com/lumen5-site-images/favicon/2025/favicon.ico
     pwaSupported: false
     selfhosted: false
-    categories: [media]
+    categories: [media, ai]
     tags:
       - video
       - ai
