@@ -13,7 +13,7 @@ apps:
     icon: https://raw.githubusercontent.com/ourongxing/newsnow/main/public/pwa-512x512.png
     pwaSupported: true
     selfhosted: true
-    category: news
+    categories: [news]
     tags:
       - news
       - aggregator
@@ -35,7 +35,7 @@ apps:
     icon: https://www.google.com/s2/favicons?domain=goofish.com&sz=128
     pwaSupported: false
     selfhosted: false
-    category: tools
+    categories: [tools]
     tags:
       - marketplace
       - second-hand
@@ -58,7 +58,7 @@ apps:
     pwaSupported: true
     selfhosted: true
     selfhostUrl:  
-    category: media
+    categories: [media]
     tags:
       - tools
       - media
@@ -80,7 +80,7 @@ apps:
     icon: https://www.google.com/s2/favicons?domain=fydeos.io&sz=128
     pwaSupported: true
     selfhosted: false
-    category: office
+    categories: [office]
     tags:
       - notes
       - productivity
@@ -102,7 +102,7 @@ apps:
     icon: https://www.google.com/s2/favicons?domain=paperpile.com&sz=128
     pwaSupported: false
     selfhosted: false
-    category: office
+    categories: [office]
     tags:
       - reference
       - research
@@ -124,7 +124,7 @@ apps:
     icon: https://www.google.com/s2/favicons?domain=photopea.com&sz=128
     pwaSupported: true
     selfhosted: false
-    category: image
+    categories: [image]
     tags:
       - image
       - editor
@@ -147,7 +147,7 @@ apps:
     pwaSupported: true
     selfhosted: true
     selfhostUrl: https://github.com/jgraph/drawio
-    category: image
+    categories: [image]
     tags:
       - diagram
       - flowchart
@@ -170,7 +170,7 @@ apps:
     pwaSupported: true
     selfhosted: true
     selfhostUrl: https://github.com/excalidraw/excalidraw
-    category: image
+    categories: [image]
     tags:
       - whiteboard
       - sketch
@@ -192,7 +192,7 @@ apps:
     icon: https://www.google.com/s2/favicons?domain=goodnotes.com&sz=128
     pwaSupported: false
     selfhosted: false
-    category: office
+    categories: [office]
     tags:
       - notes
       - handwriting
@@ -214,7 +214,7 @@ apps:
     icon: https://www.google.com/s2/favicons?domain=napkin.ai&sz=128
     pwaSupported: false
     selfhosted: false
-    category: ai
+    categories: [ai]
     tags:
       - ai
       - visualization
@@ -236,7 +236,7 @@ apps:
     icon: https://static.home-for-researchers.com/home/paint_front/pro/img/hr_family/figdrawlogo.svg
     pwaSupported: false
     selfhosted: false
-    category: tools
+    categories: [tools]
     tags:
       - science
       - illustration
@@ -258,7 +258,7 @@ apps:
     icon: https://www.google.com/s2/favicons?domain=baidu.com&sz=128
     pwaSupported: false
     selfhosted: false
-    category: tools
+    categories: [tools]
     tags:
       - map
       - coordinates
@@ -280,7 +280,7 @@ apps:
     icon: https://www-img.fydeos.com/uploads/95ac73eca26fc383b57663a9b0a31b810e4827adf4278bed076341167c8d028889f3.png
     pwaSupported: false
     selfhosted: false
-    category: media
+    categories: [media]
     tags:
       - music
       - streaming
@@ -302,7 +302,7 @@ apps:
     icon: https://www.notion.com/front-static/favicon.ico
     pwaSupported: false
     selfhosted: false
-    category: office
+    categories: [office]
     tags:
       - notes
       - docs
@@ -327,7 +327,7 @@ apps:
     selfhosted: true
     selfhostUrl: https://github.com/coder/code-server
     dockerImage: codercom/code-server
-    category: dev
+    categories: [dev]
     tags:
       - code
       - editor
@@ -349,7 +349,7 @@ apps:
     icon: https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/500px-Figma-logo.svg.png
     pwaSupported: false
     selfhosted: false
-    category: image
+    categories: [image]
     tags:
       - design
       - ui
@@ -371,7 +371,7 @@ apps:
     icon: https://mdn.alipayobjects.com/huamei_0prmtq/afts/img/A*sRUdR543RjcAAAAAAAAAAAAADvuFAQ/original
     pwaSupported: false
     selfhosted: false
-    category: office
+    categories: [office]
     tags:
       - docs
       - wiki
@@ -393,7 +393,7 @@ apps:
     icon: https://as.smgv.cn/static/lizard-service-homepage/assets/logo_icon.78308823.png
     pwaSupported: false
     selfhosted: false
-    category: office
+    categories: [office]
     tags:
       - docs
       - collaboration
@@ -415,7 +415,7 @@ apps:
     icon: https://p1-hera.feishucdn.com/tos-cn-i-jbbdkfciu3/1ec7129d900e442d8501d810efdaa369~tplv-jbbdkfciu3-image:0:0.image
     pwaSupported: false
     selfhosted: false
-    category: office
+    categories: [office]
     tags:
       - collaboration
       - chat
@@ -437,7 +437,7 @@ apps:
     icon: https://raw.githubusercontent.com/lobehub/lobe-icons/refs/heads/master/packages/static-png/light/tencent-color.png
     pwaSupported: false
     selfhosted: false
-    category: office
+    categories: [office]
     tags:
       - docs
       - collaboration
@@ -459,7 +459,7 @@ apps:
     icon: https://flomoapp.com/images/logo.png
     pwaSupported: false
     selfhosted: false
-    category: office
+    categories: [office]
     tags:
       - notes
       - journaling
@@ -482,7 +482,7 @@ apps:
     pwaSupported: false
     selfhosted: true
     selfhostUrl: https://github.com/GoogleChromeLabs/squoosh
-    category: image
+    categories: [image]
     tags:
       - image
       - compression
@@ -505,7 +505,7 @@ apps:
     pwaSupported: false
     selfhosted: true
     selfhostUrl: https://github.com/regex101
-    category: dev
+    categories: [dev]
     tags:
       - regex
       - testing
@@ -527,7 +527,7 @@ apps:
     icon: https://cdn.lumen5.com/lumen5-site-images/favicon/2025/favicon.ico
     pwaSupported: false
     selfhosted: false
-    category: media
+    categories: [media]
     tags:
       - video
       - ai
@@ -549,7 +549,7 @@ apps:
     icon: https://music.apple.com/assets/favicon/favicon-180.png
     pwaSupported: false
     selfhosted: false
-    category: media
+    categories: [media]
     tags:
       - music
       - streaming
@@ -571,7 +571,7 @@ apps:
     icon: https://flourish.studio/favicon.ico
     pwaSupported: false
     selfhosted: false
-    category: office
+    categories: [office]
     tags:
       - data-visualization
       - charts
@@ -593,7 +593,7 @@ apps:
     icon: https://carrd.co/assets/docs/images/brand/png/icon-color.png
     pwaSupported: false
     selfhosted: false
-    category: tools
+    categories: [tools]
     tags:
       - website
       - builder
@@ -615,7 +615,7 @@ apps:
     icon: https://images.seeklogo.com/logo-png/15/1/soundcloud-logo-png_seeklogo-157945.png
     pwaSupported: false
     selfhosted: false
-    category: media
+    categories: [media]
     tags:
       - music
       - audio
@@ -637,7 +637,7 @@ apps:
     icon: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0q5dOj6U4S9ln8gF51CCjCHVNFrou0rGBQw&s
     pwaSupported: false
     selfhosted: false
-    category: office
+    categories: [office]
     tags:
       - mind-map
       - brainstorming
@@ -659,7 +659,7 @@ apps:
     icon: https://milanote.com/favicon.ico
     pwaSupported: false
     selfhosted: false
-    category: office
+    categories: [office]
     tags:
       - notes
       - mood-board
@@ -681,7 +681,7 @@ apps:
     icon: https://img.wervps.gedoucheng.com/wervps/mac-20220509/03104257_65bd4b0c1c35161.png
     pwaSupported: false
     selfhosted: false
-    category: office
+    categories: [office]
     tags:
       - notes
       - outline
@@ -703,7 +703,7 @@ apps:
     icon: https://www.google.com/s2/favicons?domain=microsoft.com&sz=128
     pwaSupported: false
     selfhosted: false
-    category: office
+    categories: [office]
     tags:
       - office
       - docs
@@ -726,7 +726,7 @@ apps:
     icon: https://opencut.app/logos/opencut/svg/logo.svg?dpl=dpl_8ijD11oYkujoixZYbjcZYFKgxbAv
     pwaSupported: true
     selfhosted: true
-    category: image
+    categories: [image]
     selfhostUrl: https://github.com/OpenCut-app/OpenCut
     tags:
       - image
@@ -749,7 +749,7 @@ apps:
     pwaSupported: false
     selfhosted: true
     selfhostUrl: https://github.com/louislam/uptime-kuma
-    category: tools
+    categories: [tools]
     tags:
       - monitoring
       - uptime
@@ -772,7 +772,7 @@ apps:
     pwaSupported: false
     selfhosted: true
     selfhostUrl: https://github.com/OpenListTeam/OpenList
-    category: tools
+    categories: [tools]
     tags:
       - alist
       - cloud-storage
@@ -795,7 +795,7 @@ apps:
     pwaSupported: false
     selfhosted: true
     selfhostUrl: https://github.com/gogs/gogs
-    category: dev
+    categories: [dev]
     tags:
       - git
       - self-hosted
@@ -818,7 +818,7 @@ apps:
     pwaSupported: false
     selfhosted: true
     selfhostUrl: https://github.com/go-gitea/gitea
-    category: dev
+    categories: [dev]
     tags:
       - git
       - self-hosted
@@ -841,7 +841,7 @@ apps:
     pwaSupported: false
     selfhosted: true
     selfhostUrl: https://github.com/usememos/memos
-    category: office
+    categories: [office]
     tags:
       - notes
       - self-hosted
@@ -864,7 +864,7 @@ apps:
     pwaSupported: true
     selfhosted: true
     selfhostUrl: https://github.com/canwdev/web-mediadevices-player
-    category: media
+    categories: [media]
     tags:
       - mediadevices
       - webcam
@@ -888,7 +888,7 @@ apps:
     pwaSupported: true
     selfhosted: true
     selfhostUrl: https://github.com/SnapDrop/snapdrop
-    category: tools
+    categories: [tools]
     tags:
       - pwa
       - webrtc
@@ -911,7 +911,7 @@ apps:
     icon: https://drop.fydeos.com/images/favicon-zh.png
     pwaSupported: true
     selfhosted: false
-    category: tools
+    categories: [tools]
     tags:
       - pwa
       - webrtc
@@ -935,7 +935,7 @@ apps:
     pwaSupported: false
     selfhosted: true
     selfhostUrl: https://github.com/leanote/leanote
-    category: office
+    categories: [office]
     tags:
       - notes
       - markdown
@@ -958,7 +958,7 @@ apps:
     icon: https://www.vecpea.com/promo/icon512_vp.png
     pwaSupported: false
     selfhosted: false
-    category: image
+    categories: [image]
     tags:
       - vector
       - svg
@@ -981,7 +981,7 @@ apps:
     icon: https://www.vecpea.com/promo/icon512_jp.png
     pwaSupported: false
     selfhosted: false
-    category: media
+    categories: [media]
     tags:
       - music
       - midi
@@ -1004,7 +1004,7 @@ apps:
     icon: https://pbs.twimg.com/profile_images/1770858995206574080/7_dUm2Nt_400x400.jpg
     pwaSupported: false
     selfhosted: false
-    category: image
+    categories: [image]
     tags:
       - science
       - illustration

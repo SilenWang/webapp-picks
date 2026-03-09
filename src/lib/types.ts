@@ -30,7 +30,8 @@ export interface WebApp {
   selfhosted: boolean;
   selfhostUrl?: string;
   dockerImage?: string;
-  category: Category;
+  category?: Category;
+  categories: Category[];
   tags: string[];
   developer: string;
   license?: string;

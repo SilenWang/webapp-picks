@@ -32,9 +32,9 @@ export function AppList({ apps, locale, dict, categories }: AppListProps) {
   const [selectedAppId, setSelectedAppId] = useState<string | null>(null);
   
   const selectedApp = selectedAppId ? apps.find(app => app.id === selectedAppId) : null;
-  const categoryLabel = selectedApp 
-    ? categories.find(c => c.value === selectedApp.category)?.label[locale] || selectedApp.category
-    : '';
+  const categoryLabels = selectedApp 
+    ? selectedApp.categories.map(cat => categories.find(c => c.value === cat)?.label[locale] || cat)
+    : [];
 
   if (apps.length === 0) {
     return (
@@ -75,7 +75,7 @@ export function AppList({ apps, locale, dict, categories }: AppListProps) {
                 )}
               </div>
               <span className="app-category">
-                {categories.find(c => c.value === app.category)?.label[locale] || app.category}
+                {app.categories.map(cat => categories.find(c => c.value === cat)?.label[locale] || cat).join(', ')}
               </span>
             </div>
           </button>
@@ -87,7 +87,7 @@ export function AppList({ apps, locale, dict, categories }: AppListProps) {
           app={selectedApp}
           locale={locale}
           dict={dict}
-          categoryLabel={categoryLabel}
+          categoryLabels={categoryLabels}
           onClose={() => setSelectedAppId(null)}
         />
       )}

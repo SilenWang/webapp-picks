@@ -39,7 +39,7 @@ export function getAppById(id: string): WebApp | undefined {
 }
 
 export function getAppsByCategory(category: Category): WebApp[] {
-  return loadApps().filter(app => app.category === category);
+  return loadApps().filter(app => app.categories.includes(category));
 }
 
 export function searchApps(query: string, locale: Locale): WebApp[] {
@@ -63,7 +63,7 @@ export function filterApps(
   let result = loadApps();
   
   if (options.category) {
-    result = result.filter(app => app.category === options.category);
+    result = result.filter(app => app.categories.includes(options.category!));
   }
   
   if (options.pwaSupported !== undefined) {

@@ -25,14 +25,14 @@ interface AppDialogProps {
       tags: string;
     };
   };
-  categoryLabel: string;
+  categoryLabels: string[];
   onClose: () => void;
 }
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const getDoc = () => (globalThis as any).document;
 
-export function AppDialog({ app, locale, dict, categoryLabel, onClose }: AppDialogProps) {
+export function AppDialog({ app, locale, dict, categoryLabels, onClose }: AppDialogProps) {
   const dialogRef = useRef<HTMLDivElement>(null);
   
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -189,7 +189,7 @@ export function AppDialog({ app, locale, dict, categoryLabel, onClose }: AppDial
                 <div className="flex flex-wrap gap-x-8 gap-y-2" style={{ minWidth: '200px' }}>
                   <div style={{ minWidth: '100px' }}>
                     <dt className="text-sm text-muted-foreground">{dict.detail.category}</dt>
-                    <dd className="font-medium">{categoryLabel}</dd>
+                    <dd className="font-medium">{categoryLabels.join(', ')}</dd>
                   </div>
                   
                   <div style={{ minWidth: '100px' }}>
