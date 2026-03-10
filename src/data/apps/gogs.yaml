@@ -1,0 +1,22 @@
+id: gogs
+name:
+  en: Gogs
+  zh: Gogs
+description:
+  en: "A painless self-hosted Git service."
+  zh: "无痛的自托管 Git 服务。"
+review:
+  en: "A feature-minimalist Git service. Due to the author's philosophy, more complex features weren't added."
+  zh: "功能精简的Git服务, 只是由于原作者的理念, 没有继续增加更复杂的功能"
+url: https://gogs.io/
+icon: https://avatars.githubusercontent.com/u/6656686?s=200&v=4
+pwaSupported: false
+selfhosted: true
+selfhostUrl: https://github.com/gogs/gogs
+categories: [dev]
+tags:
+  - git
+  - self-hosted
+  - version-control
+developer: Gogs Team
+lastUpdated: "2026-02-28"

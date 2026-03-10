@@ -1,0 +1,21 @@
+id: goodnotes
+name:
+  en: GoodNotes
+  zh: GoodNotes
+description:
+  en: "Digital note-taking app"
+  zh: "数字笔记应用。"
+review:
+  en: "A popular note-taking app with a large user base. Although constantly criticized for increasing prices, they did release a web version, making it a viable option."
+  zh: "用户群体很大的笔记应用, 虽然因越来越贵被成天骂, 但是毕竟给了网页版, 也是可选之一"
+url: https://web.goodnotes.com/
+icon: https://www.google.com/s2/favicons?domain=goodnotes.com&sz=128
+pwaSupported: false
+selfhosted: false
+categories: [office]
+tags:
+  - notes
+  - handwriting
+  - productivity
+developer: Goodnotes Limited
+lastUpdated: "2026-02-24"

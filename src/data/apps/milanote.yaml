@@ -1,0 +1,21 @@
+id: milanote
+name:
+  en: Milanote
+  zh: Milanote
+description:
+  en: "Visual tool for creative projects."
+  zh: "创意项目的视觉工具。"
+review:
+  en: "Been in my bookmarks for a long time, but never actually used it..."
+  zh: "躺在收藏夹很久, 从来没真用过..."
+url: https://milanote.com/
+icon: https://milanote.com/favicon.ico
+pwaSupported: false
+selfhosted: false
+categories: [office]
+tags:
+  - notes
+  - mood-board
+  - planning
+developer: Milanote
+lastUpdated: "2024-07-25"

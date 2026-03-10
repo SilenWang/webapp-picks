@@ -1,0 +1,22 @@
+id: drawio
+name:
+  en: Draw.io
+  zh: Draw.io
+description:
+  en: "Online flowchart and diagram drawing tool."
+  zh: "在线流程图和图表绘制工具。"
+review:
+  en: "A very useful vector graphics drawing tool. Many web-based office software's flowchart tools are actually embedded versions of it."
+  zh: "非常好用的矢量图绘制工具, 目前很多网页办公软件的流程图作图工具都是内嵌的它"
+url: https://app.diagrams.net/
+icon: https://www.google.com/s2/favicons?domain=diagrams.net&sz=128
+pwaSupported: true
+selfhosted: true
+selfhostUrl: https://github.com/jgraph/drawio
+categories: [image]
+tags:
+  - diagram
+  - flowchart
+  - mind-map
+developer: JGraph
+lastUpdated: "2026-02-24"

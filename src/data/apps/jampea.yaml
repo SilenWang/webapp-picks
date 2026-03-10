@@ -1,0 +1,22 @@
+id: jampea
+name:
+  en: Jampea
+  zh: Jampea
+description:
+  en: "Online MIDI music editor and composition tool."
+  zh: "在线 MIDI 音乐编辑和作曲工具。"
+review:
+  en: "Another new creation from Photopea's author. All I can say is the author is legendary..."
+  zh: "Photopea作者的新作品, 我只能说作者NB..."
+url: https://jampea.com/
+icon: https://www.vecpea.com/promo/icon512_jp.png
+pwaSupported: false
+selfhosted: false
+categories: [media]
+tags:
+  - music
+  - midi
+  - audio
+  - editor
+developer: Jampea
+lastUpdated: "2026-02-28"

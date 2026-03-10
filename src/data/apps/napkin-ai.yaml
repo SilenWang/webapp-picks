@@ -1,0 +1,21 @@
+id: napkin-ai
+name:
+  en: Napkin AI
+  zh: Napkin AI
+description:
+  en: "AI-powered visual thinking and content creation tool."
+  zh: "AI 驱动的视觉思维和内容创作工具。"
+review:
+  en: "An AI-powered slide generation tool launched 2 years ago that was originally stunning. But now everyone probably uses nano banana instead..."
+  zh: "2年前就推出的AI驱动的类Slide生成工具, 原本非常惊艳, 但现在大概大家都用nano banana了..."
+url: https://app.napkin.ai
+icon: https://www.google.com/s2/favicons?domain=napkin.ai&sz=128
+pwaSupported: false
+selfhosted: false
+categories: [ai, office]
+tags:
+  - ai
+  - visualization
+  - design
+developer: Napkin AI
+lastUpdated: "2026-02-24"

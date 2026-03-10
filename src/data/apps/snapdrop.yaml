@@ -1,0 +1,23 @@
+id: snapdrop
+name:
+  en: Snapdrop
+  zh: Snapdrop
+description:
+  en: "A Progressive Web App for local file sharing, inspired by Apple's AirDrop."
+  zh: "本地文件共享的渐进式 Web 应用，灵感来自苹果 AirDrop。"
+review:
+  en: "A very interesting local network file sharing app. Slightly inconvenient for transferring large files or multiple files."
+  zh: "非常有意思的局域网穿文件应用, 传大文件和多个文件稍有不便"
+url: https://snapdrop.net/
+icon: https://www.snap-drop.net/images/android-chrome-192x192.png
+pwaSupported: true
+selfhosted: true
+selfhostUrl: https://github.com/SnapDrop/snapdrop
+categories: [tools]
+tags:
+  - pwa
+  - webrtc
+  - file-sharing
+  - local-network
+developer: SnapDrop Team
+lastUpdated: "2026-02-28"

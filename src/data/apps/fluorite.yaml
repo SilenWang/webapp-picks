@@ -1,0 +1,22 @@
+id: fluorite
+name:
+  en: Fluorite
+  zh: Fluorite
+description:
+  en: "An elegant, offline‑first PWA video player for your local media."
+  zh: "一个优雅的、以离线优先为理念的 PWA 视频播放器，用于播放你的本地媒体。"
+review:
+  en: "If you find FydeOS/ChromeOS's built-in local video player too basic, try this. At least dragging the progress bar won't freeze."
+  zh: "如果觉得FydeOS/ChromeOS自带的本地视频播放功能太简单可以试试这个, 至少进度条拖动不会卡死"
+url: https://fluorite.afcms.dev/
+icon: https://raw.githubusercontent.com/AFCMS/fluorite/master/public/fluorite.svg
+pwaSupported: true
+selfhosted: true
+selfhostUrl:  
+categories: [media]
+tags:
+  - tools
+  - media
+  - player
+developer: AFCMS
+lastUpdated: "2026-02-24"

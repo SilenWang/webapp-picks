@@ -1,0 +1,22 @@
+id: openlist
+name:
+  en: OpenList
+  zh: OpenList
+description:
+  en: "A new AList Fork to Anti Trust Crisis, a file listing program that supports multiple storage."
+  zh: "AList 的社区分支，支持多种存储介质的文件列表程序。"
+review:
+  en: "A file lister supporting many protocols. The best successor after the AList sale incident."
+  zh: "支持超多协议的聚合网盘, AList出售事件后的最佳继任者"
+url: https://doc.oplist.org/
+icon: https://raw.githubusercontent.com/OpenListTeam/Logo/main/logo.svg
+pwaSupported: false
+selfhosted: true
+selfhostUrl: https://github.com/OpenListTeam/OpenList
+categories: [tools]
+tags:
+  - alist
+  - cloud-storage
+  - file-sharing
+developer: OpenListTeam
+lastUpdated: "2026-02-28"

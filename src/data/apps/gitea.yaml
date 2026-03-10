@@ -1,0 +1,22 @@
+id: gitea
+name:
+  en: Gitea
+  zh: Gitea
+description:
+  en: "Git with a cup of tea! Painless self-hosted all-in-one software development service."
+  zh: "一杯茶的时间，轻松自托管的全方位软件开发服务。"
+review:
+  en: "A community-maintained fork of Gogs. Now even supports Actions. A lightweight alternative to GitHub."
+  zh: "衍生自Gogs的社区维护的Git服务, 现在连Action用了, 是Github的轻量级替代"
+url: https://gitea.com/
+icon: https://about.gitea.com/gitea.svg
+pwaSupported: false
+selfhosted: true
+selfhostUrl: https://github.com/go-gitea/gitea
+categories: [dev]
+tags:
+  - git
+  - self-hosted
+  - ci-cd
+developer: Gitea Team
+lastUpdated: "2026-02-28"

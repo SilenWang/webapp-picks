@@ -1,0 +1,22 @@
+id: regex101
+name:
+  en: Regex101
+  zh: Regex101
+description:
+  en: "Online regex debugger and tester."
+  zh: "在线正则表达式调试和测试工具。"
+review:
+  en: "Just learned about this recently. Used to test regex with VSCode's built-in search..."
+  zh: "最近才知道还有这种东西, 以前都是用VSCode内置的搜索来测的..."
+url: https://regex101.com/
+icon: https://regex101.com/static/assets/icon-57.png
+pwaSupported: false
+selfhosted: true
+selfhostUrl: https://github.com/regex101
+categories: [dev]
+tags:
+  - regex
+  - testing
+  - development
+developer: Regex101
+lastUpdated: "2024-07-15"

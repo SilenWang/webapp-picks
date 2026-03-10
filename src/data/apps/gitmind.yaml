@@ -1,0 +1,21 @@
+id: gitmind
+name:
+  en: GitMind
+  zh: GitMind
+description:
+  en: "Free online mind mapping and brainstorming."
+  zh: "免费在线思维导图和头脑风暴工具。"
+review:
+  en: "Great features, but it is quite expensive..."
+  zh: "功能很好, 但确实有些贵了..."
+url: https://gitmind.com/
+icon: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0q5dOj6U4S9ln8gF51CCjCHVNFrou0rGBQw&s
+pwaSupported: false
+selfhosted: false
+categories: [office]
+tags:
+  - mind-map
+  - brainstorming
+  - diagram
+developer: GitMind
+lastUpdated: "2024-05-30"

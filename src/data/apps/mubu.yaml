@@ -1,0 +1,21 @@
+id: mubu
+name:
+  en: Mubu
+  zh: 幕布
+description:
+  en: "Outline-based note-taking and brainstorming."
+  zh: "基于大纲的笔记和头脑风暴工具。"
+review:
+  en: "A tool for organizing outlines and notes. For now, it might only be useful for presentations."
+  zh: "帮助整理大纲和笔记的工具, 目前来说可能还是展示才用的上"
+url: https://mubu.com/
+icon: https://img.wervps.gedoucheng.com/wervps/mac-20220509/03104257_65bd4b0c1c35161.png
+pwaSupported: false
+selfhosted: false
+categories: [office]
+tags:
+  - notes
+  - outline
+  - mind-map
+developer: Mubu
+lastUpdated: "2024-06-15"

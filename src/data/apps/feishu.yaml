@@ -1,0 +1,21 @@
+id: feishu
+name:
+  en: Feishu
+  zh: 飞书
+description:
+  en: "Enterprise collaboration platform."
+  zh: "企业协作平台。"
+review:
+  en: "Among DingTalk and WeCom, this has the most complete web features. However, the mainland China version strongly encourages downloading the app and requires mainland phone numbers to register for Feishu instead of Lark. In practice, features may not be complete."
+  zh: "相比钉钉和企业微信, 是Web端功能最全的一个了, 然而一如既往的大陆版本强引导下载App和大陆手机号强制注册飞书而不是Lark, 实际使用起来功能估计不会完整"
+url: https://www.feishu.cn/
+icon: https://p1-hera.feishucdn.com/tos-cn-i-jbbdkfciu3/1ec7129d900e442d8501d810efdaa369~tplv-jbbdkfciu3-image:0:0.image
+pwaSupported: false
+selfhosted: false
+categories: [office]
+tags:
+  - collaboration
+  - chat
+  - docs
+developer: ByteDance
+lastUpdated: "2024-08-15"

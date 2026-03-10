@@ -1,0 +1,21 @@
+id: spotify
+name:
+  en: Spotify
+  zh: Spotify
+description:
+  en: "Spotify is all the music you'll ever need."
+  zh: "Spotify，你所需的音乐。"
+review:
+  en: "Music streaming platform. One of the options for listening to music."
+  zh: "音乐平台, 听音乐的选择之一"
+url: https://open.spotify.com/
+icon: https://www-img.fydeos.com/uploads/95ac73eca26fc383b57663a9b0a31b810e4827adf4278bed076341167c8d028889f3.png
+pwaSupported: false
+selfhosted: false
+categories: [media]
+tags:
+  - music
+  - streaming
+  - audio
+developer: Spotify AB
+lastUpdated: "2024-07-26"

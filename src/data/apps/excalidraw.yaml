@@ -1,0 +1,22 @@
+id: excalidraw
+name:
+  en: Excalidraw
+  zh: Excalidraw
+description:
+  en: "Virtual whiteboard for hand-drawn style diagrams."
+  zh: "手绘风格的白板绘图工具。"
+review:
+  en: "A distinctive whiteboard drawing tool with a unique hand-drawn style that's quite memorable. It also integrated AI drawing features relatively early."
+  zh: "很有特色的白板作图工具, 独特的手绘风格令人印象深刻, 也比较早就接入了AI绘图功能"
+url: https://excalidraw.com/
+icon: https://www.google.com/s2/favicons?domain=excalidraw.com&sz=128
+pwaSupported: true
+selfhosted: true
+selfhostUrl: https://github.com/excalidraw/excalidraw
+categories: [image, ai]
+tags:
+  - whiteboard
+  - sketch
+  - diagram
+developer: Excalidraw
+lastUpdated: "2026-02-24"

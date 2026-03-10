@@ -1,0 +1,23 @@
+id: leanote
+name:
+  en: Leanote
+  zh: Leanote
+description:
+  en: "Not Just A Notepad! A feature-rich note-taking and blogging platform with Markdown support."
+  zh: "不只是笔记！支持 Markdown 的富文本笔记和博客平台。"
+review:
+  en: "The first app I used for Markdown note-taking. It's remarkable that it hasn't shut down."
+  zh: "我最早用来写Markdown笔记的应用, 没有倒闭已是不易"
+url: https://leanote.com/
+icon: https://leanote.com/favicon.ico
+pwaSupported: false
+selfhosted: true
+selfhostUrl: https://github.com/leanote/leanote
+categories: [office]
+tags:
+  - notes
+  - markdown
+  - blogging
+  - knowledge-management
+developer: Leanote Team
+lastUpdated: "2026-02-28"

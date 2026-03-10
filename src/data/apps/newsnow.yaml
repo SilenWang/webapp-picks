@@ -1,0 +1,21 @@
+id: newsnow
+name:
+  en: NewsNow
+  zh: NewsNow
+description:
+  en: "Elegant reading of real-time and hottest news."
+  zh: "优雅地阅读实时热门新闻。"
+review:
+  en: "A simple and easy-to-use news aggregator. The default included sites already meet personal needs."
+  zh: "简单易用的新闻聚合榜, 默认带的网站已经可以满足个人的使用需求"
+url: https://newsnow.busiyi.world/
+icon: https://raw.githubusercontent.com/ourongxing/newsnow/main/public/pwa-512x512.png
+pwaSupported: true
+selfhosted: true
+categories: [news]
+tags:
+  - news
+  - aggregator
+  - rss
+developer: ourongxing
+lastUpdated: "2026-02-28"

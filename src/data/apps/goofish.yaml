@@ -1,0 +1,21 @@
+id: goofish
+name:
+  en: Goofish
+  zh: 闲鱼
+description:
+  en: "Second-hand marketplace platform for buying and selling used items."
+  zh: "二手闲置物品买卖平台。"
+review:
+  en: "The only second-hand marketplace platform available for individual sellers in mainland China. No matter what people say, it's the only option left..."
+  zh: "目前中国大陆个人卖家可用的二手平台就这一个了, 再怎么骂也得用..."
+url: https://www.goofish.com/
+icon: https://www.google.com/s2/favicons?domain=goofish.com&sz=128
+pwaSupported: false
+selfhosted: false
+categories: [tools]
+tags:
+  - marketplace
+  - second-hand
+  - shopping
+developer: Alibaba
+lastUpdated: "2026-02-24"

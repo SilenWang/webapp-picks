@@ -1,0 +1,21 @@
+id: shimo
+name:
+  en: Shimo
+  zh: 石墨文档
+description:
+  en: "Online document collaboration."
+  zh: "在线文档协作。"
+review:
+  en: "Online document collaboration tool. Used it passively due to team requirements..."
+  zh: "团队知识库软件, 曾经因为团队要求被动使用过..."
+url: https://shimo.im/
+icon: https://as.smgv.cn/static/lizard-service-homepage/assets/logo_icon.78308823.png
+pwaSupported: false
+selfhosted: false
+categories: [office]
+tags:
+  - docs
+  - collaboration
+  - spreadsheet
+developer: Shimo
+lastUpdated: "2024-07-18"

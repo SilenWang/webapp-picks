@@ -1,0 +1,21 @@
+id: lumen5
+name:
+  en: Lumen5
+  zh: Lumen5
+description:
+  en: "Video creation platform powered by AI."
+  zh: "AI驱动的视频创作平台。"
+review:
+  en: "Have seen it, but haven't actually used it."
+  zh: "看到过, 但确实没实际用过"
+url: https://lumen5.com/
+icon: https://cdn.lumen5.com/lumen5-site-images/favicon/2025/favicon.ico
+pwaSupported: false
+selfhosted: false
+categories: [media, ai]
+tags:
+  - video
+  - ai
+  - content-creation
+developer: Lumen5
+lastUpdated: "2024-06-20"

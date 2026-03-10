@@ -1,0 +1,21 @@
+id: figdraw
+name:
+  en: Figdraw
+  zh: Figdraw
+description:
+  en: "Online scientific illustration and drawing platform."
+  zh: "在线科研绘图平台。"
+review:
+  en: "Seems to be created as a BioRender alternative. Worth a try."
+  zh: "应该是为了平替biorender产生的平台, 可以一用"
+url: https://www.figdraw.com/
+icon: https://static.home-for-researchers.com/home/paint_front/pro/img/hr_family/figdrawlogo.svg
+pwaSupported: false
+selfhosted: false
+categories: [tools]
+tags:
+  - science
+  - illustration
+  - drawing
+developer: Figdraw
+lastUpdated: "2026-02-24"

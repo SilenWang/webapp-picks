@@ -1,0 +1,21 @@
+id: fydeos-notes
+name:
+  en: FydeOS Notes
+  zh: FydeOS 笔记
+description:
+  en: "Note-taking application by FydeOS."
+  zh: "FydeOS 出品的笔记应用。"
+review:
+  en: "Based on Affine. Ready to use out of the box, and there's no paid plan for now."
+  zh: "基于Affine的项目, 点开即用, 暂时也没有收费计划"
+url: https://notes.fydeos.io/
+icon: https://www.google.com/s2/favicons?domain=fydeos.io&sz=128
+pwaSupported: true
+selfhosted: false
+categories: [office]
+tags:
+  - notes
+  - productivity
+  - markdown
+developer: Fyde Innovations
+lastUpdated: "2026-02-24"

@@ -1,0 +1,22 @@
+id: notion
+name:
+  en: Notion
+  zh: Notion
+description:
+  en: "All-in-one workspace for notes, docs, and project management."
+  zh: "集笔记、文档和项目管理于一体的多功能工作空间。"
+review:
+  en: "A very popular all-in-one knowledge management tool. I've used it, but still prefer writing README.md directly."
+  zh: "非常流行的知识一体化笔记, 用过, 但还是更习惯直接写README.md"
+url: https://www.notion.so/
+icon: https://www.notion.com/front-static/favicon.ico
+pwaSupported: false
+selfhosted: false
+categories: [office, ai]
+tags:
+  - notes
+  - docs
+  - wiki
+  - project-management
+developer: Notion Labs
+lastUpdated: "2024-08-15"

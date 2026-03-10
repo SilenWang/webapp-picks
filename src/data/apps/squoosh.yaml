@@ -1,0 +1,22 @@
+id: squoosh
+name:
+  en: Squoosh
+  zh: Squoosh
+description:
+  en: "Compress images in your browser."
+  zh: "在浏览器中压缩图片。"
+review:
+  en: "A convenient and easy-to-use image compression tool. Ready to use instantly."
+  zh: "方便好用的图片压缩工具, 点开即用"
+url: https://squoosh.app/
+icon: https://squoosh.app/c/icon-demo-logo-326ed9b6.png
+pwaSupported: false
+selfhosted: true
+selfhostUrl: https://github.com/GoogleChromeLabs/squoosh
+categories: [image]
+tags:
+  - image
+  - compression
+  - optimization
+developer: Google Chrome Labs
+lastUpdated: "2024-05-20"

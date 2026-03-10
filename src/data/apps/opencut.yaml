@@ -1,0 +1,21 @@
+id: opencut
+name:
+  en: Opencut
+  zh: Opencut
+description:
+  en: "A free, open-source video editor for web, desktop, and mobile."
+  zh: "免费开源的基于Web技术的视频剪辑工具"
+review:
+  en: "A project created as an alternative to Capcut. Core features are complete, but basic functions (transitions and effects) are still being developed."
+  zh: "为了替代Capcut而生的项目, 核心功能以完成, 但是基本功能(转场和特效)还在逐步开发中"
+url: https://opencut.app/
+icon: https://opencut.app/logos/opencut/svg/logo.svg?dpl=dpl_8ijD11oYkujoixZYbjcZYFKgxbAv
+pwaSupported: true
+selfhosted: true
+categories: [image]
+selfhostUrl: https://github.com/OpenCut-app/OpenCut
+tags:
+  - image
+  - video editing
+developer: OpenCut-app
+lastUpdated: "2026-02-28"

@@ -1,0 +1,21 @@
+id: flomo
+name:
+  en: Flomo
+  zh: flomo 浮墨笔记
+description:
+  en: "Quick notes and thinking tools."
+  zh: "快速笔记和思考工具。"
+review:
+  en: "A minimalist journaling tool. Haven't used it since discovering Memo..."
+  zh: "简洁的日记工具, 因为知道有Memo后再没用过了..."
+url: https://flomoapp.com/
+icon: https://flomoapp.com/images/logo.png
+pwaSupported: false
+selfhosted: false
+categories: [office]
+tags:
+  - notes
+  - journaling
+  - thinking
+developer: Flomo
+lastUpdated: "2024-08-12"

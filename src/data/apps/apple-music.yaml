@@ -1,0 +1,21 @@
+id: apple-music
+name:
+  en: Apple Music
+  zh: Apple Music
+description:
+  en: "Stream over 100 million songs."
+  zh: "流媒体播放超过1亿首歌曲。"
+review:
+  en: "Music streaming option for Apple users. But would anyone really use iPhone + ChromeOS..."
+  zh: "苹果用户的听歌选择, 不过真的会有用IPhone+ChromeOS这么用么..."
+url: https://music.apple.com/
+icon: https://music.apple.com/assets/favicon/favicon-180.png
+pwaSupported: false
+selfhosted: false
+categories: [media]
+tags:
+  - music
+  - streaming
+  - audio
+developer: Apple
+lastUpdated: "2024-07-30"

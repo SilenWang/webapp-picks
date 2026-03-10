@@ -1,0 +1,22 @@
+id: vectorpea
+name:
+  en: Vectorpea
+  zh: Vectorpea
+description:
+  en: "Online vector graphics editor for SVG editing."
+  zh: "在线 SVG 矢量图形编辑器。"
+review:
+  en: "A new creation from Photopea's author. All I can say is the author is legendary..."
+  zh: "Photopea作者的新作品, 我只能说作者NB..."
+url: https://vectorpea.com/
+icon: https://www.vecpea.com/promo/icon512_vp.png
+pwaSupported: false
+selfhosted: false
+categories: [image]
+tags:
+  - vector
+  - svg
+  - editor
+  - design
+developer: Vectorpea
+lastUpdated: "2026-02-28"

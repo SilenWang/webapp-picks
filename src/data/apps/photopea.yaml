@@ -1,0 +1,21 @@
+id: photopea
+name:
+  en: Photopea
+  zh: Photopea
+description:
+  en: "Free online image editor supporting PSD, XCF, Sketch."
+  zh: "免费在线图像编辑器，支持 PSD、XCF、Sketch 等格式。"
+review:
+  en: "The best PhotoShop alternative in my opinion. It's not open source, but there are third-party reverse-engineered older versions available for self-hosting."
+  zh: "我愿称之为PhotoShop最强替代品, 本身并不开源, 但是有第三方逆向的旧版本可自部署"
+url: https://www.photopea.com/
+icon: https://www.google.com/s2/favicons?domain=photopea.com&sz=128
+pwaSupported: true
+selfhosted: false
+categories: [image]
+tags:
+  - image
+  - editor
+  - design
+developer: Photopea
+lastUpdated: "2026-02-24"

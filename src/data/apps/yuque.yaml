@@ -1,0 +1,21 @@
+id: yuque
+name:
+  en: Yuque
+  zh: 语雀
+description:
+  en: "Knowledge management and collaboration platform."
+  zh: "知识管理和协作平台。"
+review:
+  en: "Team knowledge base software from Alibaba. Used it passively due to team requirements..."
+  zh: "团队知识库软件, 曾经因为团队要求被动使用过..."
+url: https://www.yuque.com/
+icon: https://mdn.alipayobjects.com/huamei_0prmtq/afts/img/A*sRUdR543RjcAAAAAAAAAAAAADvuFAQ/original
+pwaSupported: false
+selfhosted: false
+categories: [office]
+tags:
+  - docs
+  - wiki
+  - collaboration
+developer: Alibaba
+lastUpdated: "2024-08-08"

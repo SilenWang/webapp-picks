@@ -1,0 +1,22 @@
+id: fydedrop
+name:
+  en: FyDrop
+  zh: 燧炻传送
+description:
+  en: "P2P file transfer between devices in the same network, based on Snapdrop."
+  zh: "同网络下设备间的 P2P 文件传输，基于 Snapdrop 构建。"
+review:
+  en: "FydeOS's file transfer app built on Snapdrop. Directly integrated into the file manager, quite practical."
+  zh: "燧炻基于SnapDrop构建的内网传输App, 直接整合在文件应用中, 还挺实用"
+url: https://drop.fydeos.com/
+icon: https://drop.fydeos.com/images/favicon-zh.png
+pwaSupported: true
+selfhosted: false
+categories: [tools]
+tags:
+  - pwa
+  - webrtc
+  - file-sharing
+  - local-network
+developer: FydeOS
+lastUpdated: "2026-02-28"

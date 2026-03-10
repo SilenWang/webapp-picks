@@ -1,0 +1,22 @@
+id: uptimekuma
+name:
+  en: Uptime Kuma
+  zh: Uptime Kuma
+description:
+  en: "A fancy self-hosted monitoring tool."
+  zh: "一款优雅的自托管监控工具。"
+review:
+  en: "Simple configuration for website/service availability monitoring. My lifesaver and guardian."
+  zh: "配置简单的网站/服务可用性监控, 就我狗命的看门管家"
+url: https://uptime.kuma.pet/
+icon: https://raw.githubusercontent.com/louislam/uptime-kuma/master/public/icon.svg
+pwaSupported: false
+selfhosted: true
+selfhostUrl: https://github.com/louislam/uptime-kuma
+categories: [tools]
+tags:
+  - monitoring
+  - uptime
+  - self-hosted
+developer: louislam
+lastUpdated: "2026-02-28"

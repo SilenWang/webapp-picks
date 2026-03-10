@@ -1,0 +1,23 @@
+id: vscode
+name:
+  en: VSCode for the Web
+  zh: VSCode 网页版
+description:
+  en: "Code anywhere, anytime, in your browser."
+  zh: "随时随地在浏览器中编写代码。"
+review:
+  en: "The official VSCode Web version. With Tunnel and extensions, you can use over 90% of VSCode's desktop features."
+  zh: "官方的VSCode Web版本, 配上Tunnel和插件几乎可以使用90%以上的VSCode桌面功能"
+url: https://vscode.dev/
+icon: https://vscode.dev/static/stable/favicon.ico
+pwaSupported: false
+selfhosted: true
+selfhostUrl: https://github.com/coder/code-server
+dockerImage: codercom/code-server
+categories: [dev]
+tags:
+  - code
+  - editor
+  - development
+developer: Microsoft
+lastUpdated: "2024-08-20"

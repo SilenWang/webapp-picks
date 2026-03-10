@@ -1,0 +1,21 @@
+id: paperpile
+name:
+  en: Paperpile
+  zh: Paperpile
+description:
+  en: "Reference management software for researchers."
+  zh: "面向研究人员的文献管理软件。"
+review:
+  en: "Pure web app with storage tied to Google Drive. The price is reasonable even when converted to RMB. A good choice for FydeOS/ChromeOS users."
+  zh: "纯网页应用, 存储绑定Google Drive, 收费即使换算成人民币也并不贵, 是FydeOS/ChromeOS下比较好的选择了"
+url: https://app.paperpile.com/
+icon: https://www.google.com/s2/favicons?domain=paperpile.com&sz=128
+pwaSupported: false
+selfhosted: false
+categories: [office]
+tags:
+  - reference
+  - research
+  - bibliography
+developer: Paperpile LLC
+lastUpdated: "2026-02-28"

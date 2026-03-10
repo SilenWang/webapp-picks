@@ -1,0 +1,21 @@
+id: baidu-coordinate-picker
+name:
+  en: Baidu Coordinate Picker
+  zh: 百度坐标拾取
+description:
+  en: "Tool for picking and converting map coordinates."
+  zh: "地图坐标拾取和转换工具。"
+review:
+  en: "A small tool recommended by ChatGPT. Quite useful when you need to create maps with markers."
+  zh: "ChatGPT给我推荐的小工具, 需要绘制地图标点图的时候还挺实用"
+url: https://lbs.baidu.com/maptool/getpoint
+icon: https://www.google.com/s2/favicons?domain=baidu.com&sz=128
+pwaSupported: false
+selfhosted: false
+categories: [tools]
+tags:
+  - map
+  - coordinates
+  - utility
+developer: Baidu
+lastUpdated: "2026-02-24"

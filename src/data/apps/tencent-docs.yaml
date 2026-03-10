@@ -1,0 +1,21 @@
+id: tencent-docs
+name:
+  en: Tencent Docs
+  zh: 腾讯文档
+description:
+  en: "Smart document collaboration platform."
+  zh: "智能文档协作平台。"
+review:
+  en: "Usable, but not great. Some features that depend on the desktop client are missing."
+  zh: "能用, 但确实不好用, 部分依赖桌面客户端的功能缺失"
+url: https://docs.qq.com/
+icon: https://raw.githubusercontent.com/lobehub/lobe-icons/refs/heads/master/packages/static-png/light/tencent-color.png
+pwaSupported: false
+selfhosted: false
+categories: [office]
+tags:
+  - docs
+  - collaboration
+  - cloud
+developer: Tencent
+lastUpdated: "2024-08-01"

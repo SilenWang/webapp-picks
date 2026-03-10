@@ -1,0 +1,22 @@
+id: office
+name:
+  en: Microsoft 365
+  zh: 微软 365
+description:
+  en: "Online Office suite."
+  zh: "在线办公套件。"
+review:
+  en: "Essential for office work... Except for being slow, everything else is fine."
+  zh: "办公必备... 除了卡都还挺好"
+url: https://office.com/
+icon: https://www.google.com/s2/favicons?domain=microsoft.com&sz=128
+pwaSupported: false
+selfhosted: false
+categories: [office]
+tags:
+  - office
+  - docs
+  - spreadsheet
+  - presentation
+developer: Shilihu Technology Co., Ltd.
+lastUpdated: "2026-02-28"

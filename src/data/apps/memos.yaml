@@ -1,0 +1,22 @@
+id: memos
+name:
+  en: Memos
+  zh: Memos
+description:
+  en: "An open-source, self-hosted note-taking service."
+  zh: "开源自托管笔记服务。"
+review:
+  en: "I don't know who came first, Flomo or Memos. But it's open source and lightweight, so I chose it."
+  zh: "我也不知道它和Flomo谁先, 但是它开源且轻量, 所以我选它"
+url: https://usememos.com/
+icon: https://raw.githubusercontent.com/usememos/.github/refs/heads/main/assets/logo-rounded.png
+pwaSupported: false
+selfhosted: true
+selfhostUrl: https://github.com/usememos/memos
+categories: [office]
+tags:
+  - notes
+  - self-hosted
+  - markdown
+developer: usememos
+lastUpdated: "2026-02-28"

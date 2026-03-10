@@ -1,0 +1,21 @@
+id: flourish
+name:
+  en: Flourish
+  zh: Flourish
+description:
+  en: "Data visualization and storytelling platform."
+  zh: "数据可视化和故事讲述平台。"
+review:
+  en: "Data visualization platform. A lazy option for those who don't want to write code."
+  zh: "数据可视化的平台, 不想写代码的偷懒之选"
+url: https://flourish.studio/
+icon: https://flourish.studio/favicon.ico
+pwaSupported: false
+selfhosted: false
+categories: [office]
+tags:
+  - data-visualization
+  - charts
+  - infographics
+developer: Flourish
+lastUpdated: "2024-06-25"

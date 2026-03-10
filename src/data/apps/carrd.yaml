@@ -1,0 +1,21 @@
+id: carrd
+name:
+  en: Carrd
+  zh: Carrd
+description:
+  en: "Simple, free, responsive one-page sites."
+  zh: "简单、免费、响应式单页网站。"
+review:
+  en: "A service for building websites. But it feels like AI can now do 70-80% of the job..."
+  zh: "帮助创建网站的服务, 但是感觉现在AI能做到七八成的效果了..."
+url: https://carrd.co/
+icon: https://carrd.co/assets/docs/images/brand/png/icon-color.png
+pwaSupported: false
+selfhosted: false
+categories: [tools]
+tags:
+  - website
+  - builder
+  - hosting
+developer: Carrd
+lastUpdated: "2024-07-20"

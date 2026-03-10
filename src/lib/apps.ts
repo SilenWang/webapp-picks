@@ -11,10 +11,16 @@ function loadApps(): WebApp[] {
     return cachedApps;
   }
   
-  const filePath = path.join(process.cwd(), 'src', 'data', 'apps.yaml');
-  const fileContents = fs.readFileSync(filePath, 'utf8');
-  const data = YAML.parse(fileContents);
-  cachedApps = data.apps as WebApp[];
+  const appsDir = path.join(process.cwd(), 'src', 'data', 'apps');
+  const files = fs.readdirSync(appsDir).filter(file => file.endsWith('.yaml') || file.endsWith('.yml'));
+  
+  const apps = files.map(file => {
+    const filePath = path.join(appsDir, file);
+    const fileContents = fs.readFileSync(filePath, 'utf8');
+    return YAML.parse(fileContents) as WebApp;
+  });
+  
+  cachedApps = apps;
   return cachedApps;
 }
 

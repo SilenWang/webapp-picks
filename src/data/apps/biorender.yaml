@@ -1,0 +1,22 @@
+id: biorender
+name:
+  en: BioRender
+  zh: BioRender
+description:
+  en: "Create professional science figures in seconds with thousands of pre-made icons and templates."
+  zh: "使用数千个预制图标和模板快速创建专业科学图表。"
+review:
+  en: "The top choice for scientific illustrations. Very expensive, but has the richest resources..."
+  zh: "科研示意图首选, 非常贵, 但是资源最丰富..."
+url: https://biorender.com/
+icon: https://pbs.twimg.com/profile_images/1770858995206574080/7_dUm2Nt_400x400.jpg
+pwaSupported: false
+selfhosted: false
+categories: [image]
+tags:
+  - science
+  - illustration
+  - biology
+  - design
+developer: BioRender
+lastUpdated: "2026-02-28"
