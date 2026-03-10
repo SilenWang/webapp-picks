@@ -1,0 +1,22 @@
+id: magicv
+name:
+  en: Magic Resume
+  zh: 魔方简历
+description:
+  en: "AI-powered resume editor that helps you create professional resumes quickly."
+  zh: "AI 驱动的简历编辑器，帮助您快速创建专业简历。"
+review:
+  en: "An open-source and useful resume tool, much more comfortable than those that are paid and cannot export."
+  zh: "开源好用的简历工具，比哪些收费又无法导出的舒心多了..."
+url: https://magicv.art/zh
+icon: https://www.google.com/s2/favicons?domain=magicv.art&sz=128
+pwaSupported: false
+selfhosted: false
+categories: [ai, tools]
+tags:
+  - resume
+  - cv
+  - ai
+  - editor
+developer: JOYCEQL
+lastUpdated: "2026-03-11"

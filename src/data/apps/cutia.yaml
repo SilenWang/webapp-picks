@@ -1,0 +1,23 @@
+id: cutia
+name:
+  en: Cutia
+  zh: Cutia
+description:
+  en: "Privacy-first, open-source video editing in the browser."
+  zh: "隐私优先的开源浏览器视频编辑器。"
+review:
+  en: "A fork of Opencut, perhaps the author felt Opencut was progressing too slowly?"
+  zh: "Opencut的衍生项目，可能是做作者觉得Opencut进度太慢了？"
+url: https://cutia.msgbyte.com
+icon: https://cutia.msgbyte.com/logos/cutia/svg/logo.svg
+pwaSupported: true
+selfhosted: true
+selfhostUrl: https://github.com/msgbyte/cutia
+categories: [media, ai]
+tags:
+  - video
+  - editor
+  - open-source
+  - privacy
+developer: msgbyte
+lastUpdated: "2026-03-11"
