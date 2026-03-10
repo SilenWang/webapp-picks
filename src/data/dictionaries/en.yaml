@@ -1,0 +1,44 @@
+header:
+  title: Webapp Picks
+  search: Search apps...
+  language: Language
+  theme: Theme
+  themeLight: Light
+  themeDark: Dark
+  themeAuto: Auto
+  about: About
+about:
+  title: About Webapp Picks
+  origin: Origin
+  originContent: I currently primarily use devices running FydeOS as my personal computers. When using these devices, I prefer to follow the original philosophy of FydeOS's upstream, Chromium OS, which is to accomplish everything through websites and web applications. However, such systems are extremely rare in my surroundings, making it difficult for me to find a specialized, consistently updated web app store designed for these devices. Given this situation, I decided to build one myself based on my actual usage needs.
+  criteria: Criteria
+  criteriaContent: In terms of inclusion criteria, considering the increasingly blurred line between websites and applications today, I don't strictly limit the selection to only apps that comply with PWA specifications. As long as it's a web-based application that can effectively meet a certain need in my life or work, I will include it.
+  back: Back
+filters:
+  all: All
+  category: Category
+  pwaSupported: PWA Support
+  selfhosted: Self-hosted
+  yes: Yes
+  no: No
+appCard:
+  openApp: Open
+  pwa: PWA
+  selfhost: Self-hosted
+detail:
+  overview: Overview
+  details: Details
+  version: Version
+  lastUpdated: Info Updated
+  developer: Developer
+  category: Category
+  tags: Tags
+  license: License
+  pwaSupport: PWA Support
+  selfhosted: Self-hosted
+  selfhostUrl: Self-hosted URL
+  dockerImage: Docker Image
+  openApp: Open App
+noResults: No apps found
+footer:
+  description: A curated collection of web applications

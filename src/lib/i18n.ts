@@ -1,20 +1,39 @@
-import { Locale } from './types';
+import { Locale } from "./types";
+import YAML from "yaml";
+import fs from "fs";
+import path from "path";
 
-export async function getDictionary(locale: Locale) {
-  try {
-    const modules = await Promise.all([
-      import('../data/dictionaries/en.json'),
-      import('../data/dictionaries/zh.json'),
-    ]);
-    
-    const dictionaries: Record<Locale, any> = {
-      en: modules[0].default,
-      zh: modules[1].default,
-    };
-    
-    return dictionaries[locale];
-  } catch (error) {
-    console.error('Failed to load dictionary:', error);
-    return {};
+let cachedDictionaries: Record<Locale, Record<string, unknown>> | null = null;
+
+function loadDictionaries(): Record<Locale, Record<string, unknown>> {
+  if (cachedDictionaries) {
+    return cachedDictionaries;
   }
+
+  const dictionaries: Record<Locale, Record<string, unknown>> = {
+    en: {},
+    zh: {},
+  };
+
+  const locales: Locale[] = ["en", "zh"];
+
+  for (const locale of locales) {
+    const filePath = path.join(
+      process.cwd(),
+      "src",
+      "data",
+      "dictionaries",
+      `${locale}.yaml`
+    );
+    const fileContents = fs.readFileSync(filePath, "utf8");
+    dictionaries[locale] = YAML.parse(fileContents) as Record<string, unknown>;
+  }
+
+  cachedDictionaries = dictionaries;
+  return cachedDictionaries;
+}
+
+export function getDictionary(locale: Locale): Record<string, unknown> {
+  const dictionaries = loadDictionaries();
+  return dictionaries[locale];
 }
