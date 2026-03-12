@@ -1,0 +1,21 @@
+id: zoom
+name:
+  en: Zoom
+  zh: Zoom
+description:
+  en: "Popular video conferencing platform."
+  zh: "流行的视频会议平台。"
+review:
+  en: "The webapp has basic features, but full functionality still requires the client. Personally, I don't think it's a good practice."
+  zh: "Webapp的基本功能有，但是完整功能还是要客户端，个人觉得不是好文明。"
+url: https://app.zoom.us
+icon: https://upload.wikimedia.org/wikipedia/commons/7/7b/Zoom_Communications_Logo.svg
+pwaSupported: true
+selfhosted: false
+categories: [office]
+tags:
+  - meeting
+  - video
+  - conference
+developer: Zoom Video Communications
+lastUpdated: "2025-03-12"

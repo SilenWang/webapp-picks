@@ -1,0 +1,23 @@
+id: microsoft-teams
+name:
+  en: Microsoft Teams
+  zh: Microsoft Teams
+description:
+  en: "Microsoft's communication and collaboration platform."
+  zh: "Microsoft 的通信和协作平台。"
+review:
+  en: "Microsoft's meeting software has now fully transitioned to web technology, but the performance seems slightly inferior to Google's."
+  zh: "微软的会议软件, 现在也已全面转向了web技术, 性能上似乎比Google家稍逊。"
+url: https://teams.live.com/free
+icon: https://upload.wikimedia.org/wikipedia/commons/c/c9/Microsoft_Office_Teams_%282018%E2%80%93present%29.svg
+pwaSupported: true
+selfhosted: false
+categories: [office]
+tags:
+  - meeting
+  - video
+  - conference
+  - collaboration
+  - microsoft
+developer: Microsoft
+lastUpdated: "2025-03-12"

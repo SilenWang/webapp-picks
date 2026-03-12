@@ -1,0 +1,22 @@
+id: google-meet
+name:
+  en: Google Meet
+  zh: Google Meet
+description:
+  en: "Google's video conferencing service."
+  zh: "Google 视频会议服务。"
+review:
+  en: "All meeting features are available in the browser, and the experience is better than most apps with clients. Unfortunately, you need participants to join, and if they don't use it, there's nothing you can do..."
+  zh: "只要一个浏览器就能实现全部会议功能, 且体验比大多数有客户端的更好. 可惜一人不成会, 参会的人不用, 也没辙..."
+url: https://meet.google.com
+icon: https://upload.wikimedia.org/wikipedia/commons/9/9b/Google_Meet_icon_%282020%29.svg
+pwaSupported: true
+selfhosted: false
+categories: [office]
+tags:
+  - meeting
+  - video
+  - conference
+  - google
+developer: Google
+lastUpdated: "2025-03-12"
