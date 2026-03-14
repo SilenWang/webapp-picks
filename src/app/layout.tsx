@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     description: "A curated collection of web applications for FydeOS",
     images: [
       {
-        url: "/og-image.png",
+        url: `${BASE_URL}/og-image.png`,
         width: 1200,
         height: 630,
         alt: "Webapp Picks",
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Webapp Picks",
     description: "A curated collection of web applications for FydeOS",
-    images: ["/og-image.png"],
+    images: [`${BASE_URL}/og-image.png`],
     creator: "@webapppicks",
   },
 };

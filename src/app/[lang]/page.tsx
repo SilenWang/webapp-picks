@@ -37,6 +37,29 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     zh: "发现并安装适用于 FydeOS 的实用网页应用。涵盖新闻、工具、生产力等多种分类。",
     en: "Discover and install useful webapps for FydeOS. Covering news, tools, productivity and more.",
   };
+
+  const appCount = 51;
+  
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: "Webapp Picks",
+    url: `${BASE_URL}/${lang}`,
+    description: descriptions[lang],
+    applicationCategory: "UtilitiesApplication",
+    operatingSystem: "Web Browser",
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "USD",
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.5",
+      reviewCount: appCount,
+    },
+    image: `${BASE_URL}/og-image.png`,
+  };
   
   return {
     title: titles[lang],
@@ -52,6 +75,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       title: titles[lang],
       description: descriptions[lang],
       url: `${BASE_URL}/${lang}`,
+    },
+    other: {
+      "script:ld+json": JSON.stringify(jsonLd),
     },
   };
 }

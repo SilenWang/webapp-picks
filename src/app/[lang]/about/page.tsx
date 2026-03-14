@@ -30,6 +30,26 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     zh: "了解 Webapp Picks 的由来和收录标准",
     en: "Learn about the origin and selection criteria of Webapp Picks",
   };
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Webapp Picks",
+    url: BASE_URL,
+    logo: `${BASE_URL}/og-image.png`,
+    sameAs: [
+      "https://github.com/sylenswong/webapp-picks",
+    ],
+    contactPoint: {
+      "@type": "ContactPoint",
+      contactType: "customer service",
+      email: "qiumin14@163.com",
+    },
+    founder: {
+      "@type": "Person",
+      name: "Sylens Wong",
+    },
+  };
   
   return {
     title: titles[lang],
@@ -45,6 +65,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       title: titles[lang],
       description: descriptions[lang],
       url: `${BASE_URL}/${lang}/about`,
+    },
+    other: {
+      "script:ld+json": JSON.stringify(jsonLd),
     },
   };
 }
