@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 import { getCategories } from "@/lib/apps";
 
-const BASE_URL = "https://www.webapp-picks.cc";
+const BASE_URL = "https://webapp-picks.cc";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const categories = getCategories();
