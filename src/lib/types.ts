@@ -39,6 +39,59 @@ export interface WebApp {
   lastUpdated: string;
 }
 
+export interface Dictionary {
+  header: {
+    title: string;
+    search: string;
+    language: string;
+    theme: string;
+    themeLight: string;
+    themeDark: string;
+    themeAuto: string;
+    about: string;
+  };
+  about?: {
+    title: string;
+    origin: string;
+    originContent: string;
+    criteria: string;
+    criteriaContent: string;
+    back: string;
+  };
+  filters: {
+    all: string;
+    category: string;
+    pwaSupported: string;
+    selfhosted: string;
+    yes: string;
+    no: string;
+  };
+  appCard: {
+    openApp: string;
+    pwa: string;
+    selfhost: string;
+  };
+  detail: {
+    overview: string;
+    details: string;
+    version: string;
+    lastUpdated: string;
+    developer: string;
+    category: string;
+    tags: string;
+    license: string;
+    pwaSupport: string;
+    selfhosted: string;
+    selfhostUrl: string;
+    dockerImage: string;
+    openApp: string;
+  };
+  noResults: string;
+  footer: {
+    description: string;
+  };
+}
+
 export interface AppsData {
   apps: WebApp[];
 }

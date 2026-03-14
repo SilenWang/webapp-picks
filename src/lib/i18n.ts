@@ -1,18 +1,18 @@
-import { Locale } from "./types";
+import { Locale, Dictionary } from "./types";
 import YAML from "yaml";
 import fs from "fs";
 import path from "path";
 
-let cachedDictionaries: Record<Locale, Record<string, unknown>> | null = null;
+let cachedDictionaries: Record<Locale, Dictionary> | null = null;
 
-function loadDictionaries(): Record<Locale, Record<string, unknown>> {
+function loadDictionaries(): Record<Locale, Dictionary> {
   if (cachedDictionaries) {
     return cachedDictionaries;
   }
 
-  const dictionaries: Record<Locale, Record<string, unknown>> = {
-    en: {},
-    zh: {},
+  const dictionaries: Record<Locale, Dictionary> = {
+    en: {} as Dictionary,
+    zh: {} as Dictionary,
   };
 
   const locales: Locale[] = ["en", "zh"];
@@ -26,14 +26,14 @@ function loadDictionaries(): Record<Locale, Record<string, unknown>> {
       `${locale}.yaml`
     );
     const fileContents = fs.readFileSync(filePath, "utf8");
-    dictionaries[locale] = YAML.parse(fileContents) as Record<string, unknown>;
+    dictionaries[locale] = YAML.parse(fileContents) as Dictionary;
   }
 
   cachedDictionaries = dictionaries;
   return cachedDictionaries;
 }
 
-export function getDictionary(locale: Locale): Record<string, unknown> {
+export function getDictionary(locale: Locale): Dictionary {
   const dictionaries = loadDictionaries();
   return dictionaries[locale];
 }

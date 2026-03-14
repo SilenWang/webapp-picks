@@ -105,16 +105,16 @@ export default async function AboutPage({ params }: PageProps) {
         
         <main className="main-content about-page">
           <div className="about-container">
-            <h1 className="about-title">{dict.about.title}</h1>
+            <h1 className="about-title">{dict.about?.title}</h1>
             
             <section className="about-section">
-              <h2 className="about-section-title">{dict.about.origin}</h2>
-              <p className="about-section-content">{dict.about.originContent}</p>
+              <h2 className="about-section-title">{dict.about?.origin}</h2>
+              <p className="about-section-content">{dict.about?.originContent}</p>
             </section>
             
             <section className="about-section">
-              <h2 className="about-section-title">{dict.about.criteria}</h2>
-              <p className="about-section-content">{dict.about.criteriaContent}</p>
+              <h2 className="about-section-title">{dict.about?.criteria}</h2>
+              <p className="about-section-content">{dict.about?.criteriaContent}</p>
             </section>
           </div>
         </main>
