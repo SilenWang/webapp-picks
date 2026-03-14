@@ -33,4 +33,4 @@ User-agent: Yandex
 Allow: /
 
 # Sitemap
-Sitemap: https://www.webapp-picks.cc/sitemap.xml
+Sitemap: https://webapp-picks.cc/sitemap.xml
