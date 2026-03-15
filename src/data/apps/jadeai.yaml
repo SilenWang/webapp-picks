@@ -1,0 +1,23 @@
+id: jadeai
+name:
+  en: JadeAI
+  zh: JadeAI
+description:
+  en: "AI-powered resume builder. Create professional, ATS-friendly resumes in minutes with AI assistance."
+  zh: "AI驱动简历生成器。使用AI辅助在几分钟内创建专业的、ATS友好的简历。"
+review:
+  en: "A free AI resume builder with multiple templates. Helps optimize resume content and tailor it for specific job positions."
+  zh: "免费AI简历生成器，提供多种模板。帮助优化简历内容，为特定职位量身定制。"
+url: https://jadeai.cturing.cn/en
+icon: https://jadeai.cturing.cn/logo.svg
+pwaSupported: false
+selfhosted: false
+categories: [ai, office]
+tags:
+  - resume
+  - cv
+  - ai
+  - job
+  - career
+developer: twwch
+lastUpdated: "2025-03-15"
