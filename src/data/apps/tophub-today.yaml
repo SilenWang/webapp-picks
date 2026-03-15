@@ -1,0 +1,21 @@
+id: tophub-today
+name:
+  en: TopHub Today
+  zh: 今日热榜
+description:
+  en: "Aggregates top rankings from various platforms including Zhihu, Weibo, and Bilibili."
+  zh: "聚合知乎、微博、哔哩哔哩等多平台热榜资讯。"
+review:
+  en: "Comprehensive top rankings aggregator with AI features, though the abundance of content can be overwhelming."
+  zh: "超全的热榜聚合，还有AI功能，就是内容太多了看上去有点眼花缭乱。"
+url: https://tophub.today
+icon: https://tophub.today/favicon.ico
+pwaSupported: true
+selfhosted: false
+categories: [news]
+tags:
+  - news
+  - aggregator
+  - hot
+developer: tophub
+lastUpdated: "2026-03-15"
