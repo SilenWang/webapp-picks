@@ -33,8 +33,11 @@ export function Header({ locale, dict }: HeaderProps) {
   const router = useRouter();
   const searchParams = useSearchParams();
   const [searchQuery, setSearchQuery] = useState(searchParams.get('search') || '');
-  const [theme, setTheme] = useState<Theme>('auto');
-  const [mounted, setMounted] = useState(false);
+  const [theme, setTheme] = useState<Theme>(() => {
+    if (typeof window === 'undefined') return 'auto';
+    return (localStorage.getItem('theme') as Theme) || 'auto';
+  });
+  const [mounted, setMounted] = useState(typeof window !== 'undefined');
   const [themeDropdownOpen, setThemeDropdownOpen] = useState(false);
   const [langDropdownOpen, setLangDropdownOpen] = useState(false);
   const [moreMenuOpen, setMoreMenuOpen] = useState(false);
@@ -64,18 +67,9 @@ export function Header({ locale, dict }: HeaderProps) {
   }, []);
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem('theme') as Theme | null;
-    const initialTheme = savedTheme || 'auto';
-    setTheme(initialTheme);
-    applyTheme(initialTheme);
-    setMounted(true);
-  }, [applyTheme]);
-
-  useEffect(() => {
-    if (!mounted) return;
     const cleanup = applyTheme(theme);
     return cleanup;
-  }, [theme, mounted, applyTheme]);
+  }, [theme, applyTheme]);
 
   const handleThemeChange = useCallback((newTheme: Theme) => {
     setTheme(newTheme);

@@ -42,16 +42,17 @@ export function AppDialog({ app, locale, dict, categoryLabels, onClose }: AppDia
     }
   }, [onClose]);
 
-  const doc = getDoc();
-
   useEffect(() => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const doc = (globalThis as any).document as Document | undefined;
+    if (!doc) return;
     doc.addEventListener('keydown', handleKeyDown);
     doc.body.style.overflow = 'hidden';
     return () => {
       doc.removeEventListener('keydown', handleKeyDown);
       doc.body.style.overflow = '';
     };
-  }, [handleKeyDown, doc]);
+  }, [handleKeyDown]);
 
   const dialog = (
     <div 
@@ -242,7 +243,9 @@ export function AppDialog({ app, locale, dict, categoryLabels, onClose }: AppDia
     </div>
   );
 
-  if (!doc) {
+  const doc = getDoc();
+
+  if (!doc || !doc.body) {
     return null;
   }
 
