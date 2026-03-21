@@ -9,7 +9,7 @@ review:
   en: "VooV Meeting is not the same as Tencent Meeting; it's a webapp with only basic meeting features, and Tencent Meeting doesn't support webapp at all."
   zh: "VooV Meeting 并不等同于腾讯会议，它是一个只有简陋参会功能的Webapp，而腾讯会议根本就不支持Webapp。"
 url: https://voovmeeting.com
-icon: https://img.icons8.com/color/480/voov-meeting.png
+icon: https://voovmeeting.com/static/favicon.ico
 pwaSupported: true
 selfhosted: false
 categories: [office]

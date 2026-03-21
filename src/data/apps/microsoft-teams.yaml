@@ -9,7 +9,7 @@ review:
   en: "Microsoft's meeting software has now fully transitioned to web technology, but the performance seems slightly inferior to Google's."
   zh: "微软的会议软件, 现在也已全面转向了web技术, 性能上似乎比Google家稍逊。"
 url: https://teams.live.com/free
-icon: https://upload.wikimedia.org/wikipedia/commons/c/c9/Microsoft_Office_Teams_%282018%E2%80%93present%29.svg
+icon: https://statics.teams.cdn.live.net/evergreen-assets/icons/microsoft_teams_logo_refresh_v2025.ico
 pwaSupported: true
 selfhosted: false
 categories: [office]

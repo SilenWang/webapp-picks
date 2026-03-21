@@ -9,7 +9,7 @@ review:
   en: "A free AI resume builder with multiple templates. Helps optimize resume content and tailor it for specific job positions."
   zh: "免费AI简历生成器，提供多种模板。帮助优化简历内容，为特定职位量身定制。"
 url: https://jadeai.cturing.cn/en
-icon: https://jadeai.cturing.cn/logo.svg
+icon: https://jadeai.cturing.cn/favicon.svg
 pwaSupported: false
 selfhosted: false
 categories: [ai, office]

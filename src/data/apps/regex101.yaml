@@ -9,7 +9,7 @@ review:
   en: "Just learned about this recently. Used to test regex with VSCode's built-in search..."
   zh: "最近才知道还有这种东西, 以前都是用VSCode内置的搜索来测的..."
 url: https://regex101.com/
-icon: https://regex101.com/static/assets/icon-57.png
+icon: https://regex101.com/static/assets/icons/favicon-196.png
 pwaSupported: false
 selfhosted: true
 selfhostUrl: https://github.com/regex101

@@ -9,7 +9,7 @@ review:
   en: "A project created as an alternative to Capcut. Core features are complete, but basic functions (transitions and effects) are still being developed."
   zh: "为了替代Capcut而生的项目, 核心功能以完成, 但是基本功能(转场和特效)还在逐步开发中"
 url: https://opencut.app/
-icon: https://opencut.app/logos/opencut/svg/logo.svg?dpl=dpl_8ijD11oYkujoixZYbjcZYFKgxbAv
+icon: https://opencut.app/icons/android-icon-144x144.png
 pwaSupported: true
 selfhosted: true
 categories: [image]
