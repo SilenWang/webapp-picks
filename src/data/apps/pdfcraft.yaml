@@ -1,0 +1,21 @@
+id: pdfcraft
+name:
+  en: PDFCraft
+  zh: PDFCraft
+description:
+  en: "Free online PDF tools for merging, splitting, compressing, and more."
+  zh: "免费的在线PDF工具，支持合并、分割、压缩等功能。"
+review:
+  en: "A collection of PDF tools with workflow automation support, though API access seems unavailable."
+  zh: "多种PDF工具的集合，不单是单工具，还有无代码的方式可以创建工作流，不过似乎没有API。"
+url: https://pdfcraft.devtoolcafe.com/
+icon: https://pdfcraft.devtoolcafe.com/favicon.ico
+pwaSupported: false
+selfhosted: false
+categories: [image]
+tags:
+  - pdf
+  - tools
+  - document
+developer: PDFCraft
+lastUpdated: "2026-03-21"

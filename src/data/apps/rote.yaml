@@ -1,0 +1,21 @@
+id: rote
+name:
+  en: Rote
+  zh: Rote
+description:
+  en: "A simple and elegant bookmarks and links management tool."
+  zh: "简洁优雅的书签和链接管理工具。"
+review:
+  en: "Another' open-source alternative to Flomo. Great for personal use or deploying for small teams."
+  zh: "另一个Flomo的开源替代品，除了自用，还可以部署来给小团队使用。"
+url: https://demo.rote.ink/
+icon: https://demo.rote.ink/favicon.ico
+pwaSupported: false
+selfhosted: true
+categories: [tools]
+tags:
+  - bookmarks
+  - links
+  - selfhosted
+developer: Rote
+lastUpdated: "2026-03-21"
