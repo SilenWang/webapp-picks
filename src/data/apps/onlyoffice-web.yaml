@@ -9,7 +9,7 @@ review:
   en: "Privacy-first document editor with PWA support. All processing happens locally in browser. Although it has some bugs, it really works."
   zh: "隐私优先的文档编辑器，支持PWA，所有处理都在浏览器本地完成。虽然说多少有点bug，但是确实能用。"
 url: https://ranuts.github.io/document/
-icon: https://ranuts.github.io/document/favicon.ico
+icon: https://avatars.githubusercontent.com/u/92665576?s=48&v=4
 pwaSupported: true
 selfhosted: true
 categories: [office]
