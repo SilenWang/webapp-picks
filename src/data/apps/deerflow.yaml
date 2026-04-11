@@ -1,0 +1,23 @@
+id: deerflow
+name:
+  en: DeerFlow
+  zh: DeerFlow
+description:
+  en: "Deep Research SuperAgent harness that researches, codes, and creates."
+  zh: "深度研究超级智能体框架，可进行研究、编码和创作。"
+review:
+  en: "Open-source deep research agent by ByteDance with sandbox, memory, skills and multi-model support."
+  zh: "字节跳动开源的深度研究智能体，支持沙箱、记忆、技能扩展和多模型。"
+url: https://deerflow.tech/
+icon: https://deerflow.tech/favicon.ico
+pwaSupported: false
+selfhosted: true
+categories: [ai]
+tags:
+  - ai
+  - research
+  - agent
+  - deep-research
+  - open-source
+developer: ByteDance
+lastUpdated: "2025-03-29"

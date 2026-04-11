@@ -1,0 +1,25 @@
+id: lobehub
+name:
+  en: LobeHub
+  zh: LobeHub
+description:
+  en: "A next-gen Agent harness for making AI accessible to everyone. Build AI teams that grow with you."
+  zh: "下一代Agent平台，让AI能力大众化。构建与你一起成长的AI助理团队。"
+review:
+  en: "After trying a bunch of tools, I finally settled on Lobehub. It has relatively comprehensive features and good overall support."
+  zh: "在试了一堆工具后，最终留下了Lobehub，功能比较全，各种支持也比较好。"
+url: https://app.lobehub.com
+icon: 'https://registry.npmmirror.com/@lobehub/assets-logo/1.2.0/files/assets/logo-3d.webp'
+pwaSupported: true
+selfhosted: true
+categories: [ai, dev]
+tags:
+  - ai
+  - agent
+  - chat
+  - llm
+  - gpt
+  - mcp
+  - assistant
+developer: LobeHub Community
+lastUpdated: "2026-04-11"
