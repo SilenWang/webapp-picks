@@ -1,0 +1,22 @@
+id: multica
+name:
+  en: Multica
+  zh: Multica
+description:
+  en: "Project management platform for human + agent teams. Assign tasks, track progress, compound skills."
+  zh: "面向人类+智能体团队的项目管理平台。分配任务、跟踪进度、累积技能。"
+review:
+  en: "Closer to my ideal vibe board than the vieb-kanban project, simpler configuration, can quickly connect with opencode and other common code agents. Hope it can sync issues to GitHub or Gitea in the future."
+  zh: "比名为vieb-kanban的项目更接近我心目中的vibe看板的项目, 配置更简简单, 能快速与opencode cc等常见code agent连接, 如果以后能直接把issue同步到github或者gitea就更好了"
+url: https://multica.ai/
+icon: https://multica.ai/favicon.ico
+pwaSupported: false
+selfhosted: true
+categories: [dev, ai]
+tags:
+  - project-management
+  - agent
+  - collaboration
+  - open-source
+developer: Multica
+lastUpdated: "2026-04-12"
