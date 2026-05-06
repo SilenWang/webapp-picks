@@ -1,0 +1,24 @@
+id: deckedit
+name:
+  en: DeckEdit
+  zh: DeckEdit
+description:
+  en: "Free online presentation editor. Convert NotebookLM slides to editable PowerPoint with AI-powered OCR."
+  zh: "免费的在线演示文稿编辑器, 通过AI驱动的OCR将NotebookLM幻灯片转换为可编辑的PowerPoint。"
+review:
+  en: "A powerful free tool that converts NotebookLM PDF slides to fully editable PowerPoint. 100% local processing ensures privacy - files never leave your device. Supports PDF, PNG, JPG, WebP up to 30MB and 50 pages."
+  zh: "一款强大的免费工具,可将NotebookLM PDF幻灯片转换为完全可编辑的PowerPoint。100%本地处理确保隐私 - 文件永远不会离开您的设备。支持PDF、PNG、JPG、WebP格式,最大30MB和50页。"
+url: https://deckedit.com/
+icon: https://www.google.com/s2/favicons?domain=deckedit.com&sz=128
+pwaSupported: true
+categories: [tools, office]
+tags:
+  - presentation
+  - powerpoint
+  - notebooklm
+  - converter
+  - ocr
+  - local-ai
+  - privacy
+developer: DeckEdit
+lastUpdated: "2026-05-06"
