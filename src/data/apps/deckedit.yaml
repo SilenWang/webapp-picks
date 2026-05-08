@@ -1,0 +1,24 @@
+id: deckedit
+name:
+  en: DeckEdit
+  zh: DeckEdit
+description:
+  en: "DeckEdit was co-founded by Keith Li and the CEO of a Y Combinator alumni company. Keith is the Chief Agentic Engineer. He built the entire app using AI agents under his direct supervision. DeckEdit is now two free, fully local tools with one promise. Your files stay on your device. No hidden costs, no data collection, no compromises."
+  zh: "DeckEdit 由 Keith Li 与一位 Y Combinator 校友公司的 CEO 共同创办。Keith 是首席 Agentic 工程师。他在直接监督下使用 AI 代理构建了整个应用。DeckEdit 现在是两款完全本地运行的免费工具，背后只有一个承诺。你的文件不会离开你的设备。没有隐藏费用、不收集数据、绝不妥协。"
+review:
+  en: "A very powerful Notebooklm Slide to PPT tool. Although it may not be as miraculous as described on the webpage, the fact that it runs entirely in the browser based on WebGPU technology is enough to make it a handy alternative."
+  zh: "非常强大的Notebooklm Slide转 PPT 工具，虽然想过并没有网页写的那么神，但是基于WebGPU技术完全运行在浏览器内这一点，就足以将他作为备选用具了。"
+url: https://deckedit.com/
+icon: https://deckedit.com/apple-touch-icon.png
+pwaSupported: true
+categories: [tools, office]
+tags:
+  - presentation
+  - powerpoint
+  - notebooklm
+  - converter
+  - ocr
+  - local-ai
+  - privacy
+developer: DeckEdit
+lastUpdated: "2026-05-06"
