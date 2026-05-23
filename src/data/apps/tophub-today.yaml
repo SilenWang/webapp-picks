@@ -9,7 +9,7 @@ review:
   en: "Comprehensive top rankings aggregator with AI features, though the abundance of content can be overwhelming."
   zh: "超全的热榜聚合，还有AI功能，就是内容太多了看上去有点眼花缭乱。"
 url: https://tophub.today
-icon: https://tophub.today/favicon.ico
+icon: https://www.google.com/s2/favicons?domain=tophub.today&sz=128
 pwaSupported: true
 selfhosted: false
 categories: [news]

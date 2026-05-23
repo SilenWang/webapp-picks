@@ -9,7 +9,7 @@ review:
   en: "Another' open-source alternative to Flomo. Great for personal use or deploying for small teams."
   zh: "另一个Flomo的开源替代品，除了自用，还可以部署来给小团队使用。"
 url: https://demo.rote.ink/
-icon: https://demo.rote.ink/favicon.ico
+icon: https://www.google.com/s2/favicons?domain=rote.ink&sz=128
 pwaSupported: false
 selfhosted: true
 categories: [tools]
