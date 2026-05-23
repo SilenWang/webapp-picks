@@ -1,0 +1,24 @@
+id: gemini
+name:
+  en: Google Gemini
+  zh: Google Gemini
+description:
+  en: "Google's most capable AI assistant. Chat with Gemini to get help with writing, planning, learning, and more."
+  zh: "谷歌最强大的人工智能助手。与Gemini对话，获取写作、规划、学习等方面的帮助。"
+review:
+  en: "Gemini has become my go-to AI assistant. Deep Research and real-time web search make it incredibly useful for daily tasks."
+  zh: "Gemini已经成为我首选的AI助手。Deep Research和实时联网搜索让它在日常任务中非常实用。"
+url: https://gemini.google.com
+icon: 'https://www.gstatic.com/gemini/ui/2/app_icon_192.png'
+pwaSupported: true
+selfhosted: false
+categories: [ai]
+tags:
+  - ai
+  - chat
+  - llm
+  - gemini
+  - google
+  - assistant
+developer: Google
+lastUpdated: "2026-05-23"
