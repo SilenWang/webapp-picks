@@ -6,8 +6,8 @@ description:
   en: "Google's most capable AI assistant. Chat with Gemini to get help with writing, planning, learning, and more."
   zh: "谷歌最强大的人工智能助手。与Gemini对话，获取写作、规划、学习等方面的帮助。"
 review:
-  en: "Gemini has become my go-to AI assistant. Deep Research and real-time web search make it incredibly useful for daily tasks."
-  zh: "Gemini已经成为我首选的AI助手。Deep Research和实时联网搜索让它在日常任务中非常实用。"
+  en: "Remember when ChatGPT first came out, everyone was mocking Google for making no progress in AI. But from where things stand now, while not necessarily leading the market, Google’s product combination of Gemini + Nano Banana + NotebookLM is still enough to capture a significant share of the market — at the very least, it's a much better experience than Microsoft’s ecosystem..."
+  zh: "还记得ChatGPT刚出的时候，大家都在嘲讽 Google 在 AI 方面毫无建树，但是从目前看来，虽不说领先市场，Google 系的Gemini + Nano Banana + notebooklm 的产品组合，还是足以在市场占下不少的份额，至少是比微软的生态的体验要强不少的..."
 url: https://gemini.google.com
 icon: 'https://www.gstatic.com/gemini/ui/2/app_icon_192.png'
 pwaSupported: true

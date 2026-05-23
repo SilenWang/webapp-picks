@@ -6,8 +6,8 @@ description:
   en: "Google's AI-powered research assistant. Upload documents and let NotebookLM analyze, summarize, and generate insights from your sources."
   zh: "Google 的 AI 研究助手。上传文档，让 NotebookLM 分析、总结并从您的资料中生成洞察。"
 review:
-  en: "NotebookLM is revolutionary for research. The ability to upload PDFs, web pages, and videos then ask questions about them is incredibly powerful."
-  zh: "NotebookLM 对研究工作来说是革命性的。上传 PDF、网页和视频后向其提问的能力非常强大。"
+  en: "I've actually been using NotebookLM for less than a month, but using it to study papers is indeed much faster than reading them myself. It truly realizes everything I had imagined for ChatPDF back in the day. If I had had this tool, I think I could have started working on bioinformatics algorithm development much earlier..."
+  zh: "用 NotebookLM 其实还不满一个月，但是用它来学习论文确实比我自己看快多了，它真正实现了当时我对 ChatPDF 的所有想象，要是有这个东西，我想我能更早开始从事一些生物信息算法开发的工作..."
 url: https://notebooklm.google.com
 icon: 'https://www.gstatic.com/notebooklm/logo/notebooklm_logo_192.png'
 pwaSupported: true
