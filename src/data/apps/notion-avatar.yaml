@@ -1,0 +1,24 @@
+id: notion-avatar
+name:
+  en: Notion Avatar Maker
+  zh: Notion Avatar Maker
+description:
+  en: "Create custom Notion-style avatars online. Choose from various styles, customize hair, facial features, and accessories. Download in SVG and PNG formats."
+  zh: "在线制作 Notion 风格的自定义头像。选择不同风格、自定义发型、面部特征和配饰，支持 SVG 和 PNG 格式下载。"
+review:
+  en: "Notion-style avatar generation tool recommended by shadcn (author of shadcn/ui) and technology blogger阮一峰. High quality and completely free, with CC0 license allowing commercial use."
+  zh: "Notion 风格头像制作工具，shadcn（shadcn/ui 作者）和科技博主阮一峰均推荐过。质量高且完全免费，采用 CC0 许可证允许商业使用。"
+url: https://notion-avatar.app/
+icon: https://www.google.com/s2/favicons?domain=notion-avatar.app&sz=128
+pwaSupported: false
+selfhosted: false
+categories: [image, tools]
+tags:
+  - avatar
+  - notion
+  - profile-picture
+  - design
+  - svg
+  - png
+developer: Mayandev
+lastUpdated: "2026-05-20"
