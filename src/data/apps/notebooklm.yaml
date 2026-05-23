@@ -1,0 +1,24 @@
+id: notebooklm
+name:
+  en: NotebookLM
+  zh: NotebookLM
+description:
+  en: "Google's AI-powered research assistant. Upload documents and let NotebookLM analyze, summarize, and generate insights from your sources."
+  zh: "Google 的 AI 研究助手。上传文档，让 NotebookLM 分析、总结并从您的资料中生成洞察。"
+review:
+  en: "I've actually been using NotebookLM for less than a month, but using it to study papers is indeed much faster than reading them myself. It truly realizes everything I had imagined for ChatPDF back in the day. If I had had this tool, I think I could have started working on bioinformatics algorithm development much earlier..."
+  zh: "用 NotebookLM 其实还不满一个月，但是用它来学习论文确实比我自己看快多了，它真正实现了当时我对 ChatPDF 的所有想象，要是有这个东西，我想我能更早开始从事一些生物信息算法开发的工作..."
+url: https://notebooklm.google.com
+icon: 'https://www.gstatic.com/notebooklm/logo/notebooklm_logo_192.png'
+pwaSupported: true
+selfhosted: false
+categories: [ai, office]
+tags:
+  - ai
+  - research
+  - notebook
+  - notes
+  - google
+  - assistant
+developer: Google
+lastUpdated: "2026-05-23"
